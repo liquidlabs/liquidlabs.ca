@@ -598,6 +598,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
+/* Android Projects Section
+--------------------------------*/
+#android-projects {
+  background: #fcfcfc;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+}
+
 /* Services Section
 --------------------------------*/
 #services {
