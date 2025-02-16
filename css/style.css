@@ -598,6 +598,33 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
+/* Android Projects Section
+--------------------------------*/
+#android-projects {
+  background: #fcfcfc;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+}
+
+#android-projects .box .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 2px solid #3069B0;
+  color: #3069B0;
+}
+
+#android-projects .box .btn-get-started:hover {
+  background: #3069B0;
+  color: #fff;
+}
+
 /* Services Section
 --------------------------------*/
 #services {

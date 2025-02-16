@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Liquid Labs Inc.</title>
@@ -12,7 +13,8 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+    rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +32,19 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+
+  <style>
+    .app-icon {
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .app-icon:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2),
+        0 0 1rem rgba(0, 123, 255, 0.3);
+    }
+  </style>
 </head>
 
 <body>
@@ -41,7 +56,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
+        <a href="#hero"><img src="img/logo.png" alt="" title="" /></a>
         <!-- Uncomment below if you prefer to use a text logo -->
         <!--<h1><a href="#hero">Regna</a></h1>-->
       </div>
@@ -49,7 +64,7 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
-<!--          <li><a href="#about">About Us</a></li>-->
+          <!--          <li><a href="#about">About Us</a></li>-->
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -73,41 +88,35 @@
     <!--==========================
       About Us Section
     ============================-->
-<!--    <section id="about">-->
-<!--      <div class="container">-->
-<!--        <div class="row about-container">-->
-
-<!--          <div class="col-lg-6 content order-lg-1 order-2">-->
-<!--            <h2 class="title">Few Words About Us</h2>-->
-<!--            <p>-->
-<!--              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
-<!--            </p>-->
-
-<!--            <div class="icon-box wow fadeInUp">-->
-<!--              <div class="icon"><i class="fa fa-shopping-bag"></i></div>-->
-<!--              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>-->
-<!--              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>-->
-<!--            </div>-->
-
-<!--            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">-->
-<!--              <div class="icon"><i class="fa fa-photo"></i></div>-->
-<!--              <h4 class="title"><a href="">Magni Dolores</a></h4>-->
-<!--              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>-->
-<!--            </div>-->
-
-<!--            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">-->
-<!--              <div class="icon"><i class="fa fa-bar-chart"></i></div>-->
-<!--              <h4 class="title"><a href="">Dolor Sitema</a></h4>-->
-<!--              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>-->
-<!--            </div>-->
-
-<!--          </div>-->
-
-<!--          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>-->
-<!--        </div>-->
-
-<!--      </div>-->
-<!--    </section>&lt;!&ndash; #about &ndash;&gt;-->
+    <!-- Uncomment if needed -->
+    <!-- <section id="about">
+      <div class="container">
+        <div class="row about-container">
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">Few Words About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-photo"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+        </div>
+      </div>
+    </section> -->
 
     <!--==========================
       Facts Section
@@ -119,31 +128,91 @@
           <p class="section-description">We have long history of working with mid-large size companies since 2011</p>
         </div>
         <div class="row counters">
-
-  				<div class="col-lg-3 col-6 text-center">
+          <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">6</span>
             <p>Clients</p>
-  				</div>
-
+          </div>
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">8</span>
             <p>Projects</p>
-  				</div>
-
+          </div>
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">1,263</span>
             <p>Hours Of Support</p>
-  				</div>
-
+          </div>
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">2</span>
             <p>Hard Workers</p>
-  				</div>
-
-  			</div>
-
+          </div>
+        </div>
       </div>
     </section><!-- #facts -->
+
+    <!--==========================
+      Android Projects Section
+    ============================-->
+    <section id="android-projects">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Android Projects</h3>
+          <p class="section-description">Showcasing some of our Android projects.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="box">
+              <div class="icon">
+                <img src="img/android-hkvision.png" class="img-fluid shadow-lg app-icon mb-3"
+                  alt="H.K. Vision - Wallpapers App Icon" width="256" height="256">
+              </div>
+              <h4 class="title">
+                <a href="https://play.google.com/store/apps/details?id=com.hossainkhan.vision">H.K. Vision -
+                  Wallpapers</a>
+              </h4>
+              <p class="description">This is a plugin for "Muzei Live Wallpaper" Android application that allows you to
+                use wallpaper from H.K. Vision website (<a
+                  href="https://vision.hossainkhan.com/">vision.hossainkhan.com</a>)</p>
+              <div class="mt-3">
+                <a href="https://play.google.com/store/apps/details?id=com.hossainkhan.vision" class="btn-get-started">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box">
+              <div class="icon">
+                <img src="img/android-weather-alert.png" class="img-fluid shadow-lg app-icon mb-3"
+                  alt="Weather Alert App Icon" width="256" height="256">
+              </div>
+              <h4 class="title">
+                <a href="https://play.google.com/store/apps/details?id=dev.hossain.weatheralert">Weather Alert</a>
+              </h4>
+              <p class="description">Weather Alert is a simple, no-frills app designed to notify you when specific
+                weather conditions meet the thresholds you set. Whether it's a snowy driveway or a rainy day, stay ahead
+                with timely alerts that help you prepare with ease.</p>
+              <div class="mt-3">
+                <a href="android/weather-alert/index.html" class="btn-get-started">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box">
+              <div class="icon">
+                <img src="img/android-remote-notify.png" class="img-fluid shadow-lg app-icon mb-3"
+                  alt="Remote Notify App Icon" width="256" height="256">
+              </div>
+              <h4 class="title">
+                <a href="https://play.google.com/store/apps/details?id=dev.hossain.remotenotify">Remote Notify</a>
+              </h4>
+              <p class="description">Description of Project 3. This project is user-friendly and highly efficient.</p>
+              <div class="mt-3">
+                <a href="android/remote-notify/index.html" class="btn-get-started">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- #android-projects -->
 
     <!--==========================
       Services Section
@@ -159,25 +228,27 @@
             <div class="box">
               <div class="icon"><a href="#services"><i class="fa fa-desktop"></i></a></div>
               <h4 class="title"><a href="#services">Desktop Application</a></h4>
-              <p class="description">Desktop hybrind application can be made that can cater for multi platform like Windows, Linux and macOS.</p>
+              <p class="description">Desktop hybrid application can be made that can cater for multi platform like
+                Windows, Linux and macOS.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="box">
               <div class="icon"><a href="#services"><i class="fa fa-mobile"></i></a></div>
               <h4 class="title"><a href="#services">Mobile - Android/iOS</a></h4>
-              <p class="description">Mobile solution is one of our strongest offering. Please contact us to discuss more about your product.</p>
+              <p class="description">Mobile solution is one of our strongest offering. Please contact us to discuss more
+                about your product.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="box">
               <div class="icon"><a href="#services"><i class="fa fa-paper-plane"></i></a></div>
               <h4 class="title"><a href="#services">Custom Solutions</a></h4>
-              <p class="description">We can also provide customized solution for your specific needs. Contact us to find out more.</p>
+              <p class="description">We can also provide customized solution for your specific needs. Contact us to find
+                out more.</p>
             </div>
           </div>
         </div>
-
       </div>
     </section><!-- #services -->
 
@@ -195,7 +266,6 @@
             <a class="cta-btn align-middle" href="#contact">Contact Us</a>
           </div>
         </div>
-
       </div>
     </section><!-- #call-to-action -->
 
@@ -211,68 +281,66 @@
       </div>
 
       <!-- Uncomment below if you wan to use dynamic maps -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.7164756517795!2d-79.41964934876279!3d43.77874395221865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3ddd210999f5%3A0x69b3c597e80d9dc!2sLiquid%20Labs%20Inc.!5e0!3m2!1sen!2sca!4v1576815914241!5m2!1sen!2sca" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.7164756517795!2d-79.41964934876279!3d43.77874395221865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3ddd210999f5%3A0x69b3c597e80d9dc!2sLiquid%20Labs%20Inc.!5e0!3m2!1sen!2sca!4v1576815914241!5m2!1sen!2sca"
+        width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
 
       <div class="container wow fadeInUp mt-5">
         <div class="row justify-content-center">
-
           <div class="col-lg-3 col-md-4">
-
             <div class="info">
               <div>
                 <i class="fa fa-map-marker"></i>
                 <p>1292 Tall Pine Ave<br>Oshawa, ON L1K 0G3</p>
               </div>
-
               <div>
                 <i class="fa fa-envelope"></i>
                 <p>contact@liquidlabs.ca</p>
               </div>
-
               <div>
                 <i class="fa fa-phone"></i>
                 <p>+1 647-849-4705</p>
               </div>
             </div>
-
             <div class="social-links">
-<!--              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>-->
-<!--              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>-->
-<!--              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>-->
-<!--              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>-->
-              <a href="https://www.linkedin.com/company/liquid-labs-inc-/about/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <!--              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>-->
+              <!--              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>-->
+              <!--              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>-->
+              <!--              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>-->
+              <a href="https://www.linkedin.com/company/liquid-labs-inc-/about/" class="linkedin"><i
+                  class="fa fa-linkedin"></i></a>
             </div>
-
           </div>
-
           <div class="col-lg-5 col-md-8">
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
               <form action="" method="post" role="form" class="contactForm">
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="message" rows="5" data-rule="required"
+                    data-msg="Please write something for us" placeholder="Message"></textarea>
                   <div class="validation"></div>
                 </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
               </form>
             </div>
           </div>
-
         </div>
-
       </div>
     </section><!-- #contact -->
 
@@ -284,10 +352,8 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
-
       </div>
     </div>
-
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong>Liquid Labs Inc</strong>. All Rights Reserved
@@ -324,4 +390,5 @@
   <script src="js/main.js"></script>
 
 </body>
+
 </html>
