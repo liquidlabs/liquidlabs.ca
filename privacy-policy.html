@@ -53,6 +53,16 @@
     </div>
   </header><!-- #header -->
 
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="privacy-hero">
+    <div class="hero-container">
+      <h1>Privacy Policy</h1>
+      <h2>How we protect your information</h2>
+    </div>
+  </section><!-- #privacy-hero -->
+
   <main id="main">
     <section id="privacy-policy" class="wow fadeIn">
       <div class="container">
@@ -160,6 +170,19 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+  <!-- Add scroll effect for header -->
+  <script>
+    // Apply header scrolled class on page load always
+    $(document).ready(function() {
+      $("#header").addClass("header-scrolled");
+    });
+    
+    // Keep header scrolled class on scroll
+    $(window).scroll(function() {
+      $("#header").addClass("header-scrolled");
+    });
+  </script>
 
 </body>
 
