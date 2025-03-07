@@ -3,20 +3,36 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Liquid Labs Inc.</title>
+  <title>Liquid Labs Inc. - Professional Mobile & Desktop App Development</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="description"
     content="Liquid Labs Inc. - Professional mobile and desktop application development company specializing in Android, iOS and custom solutions since 2011.">
   <meta name="keywords"
     content="android development, ios development, mobile apps, desktop applications, custom software solutions, Toronto, Canada">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://liquidlabs.ca/">
+  <meta property="og:title" content="Liquid Labs Inc. - Professional App Development">
+  <meta property="og:description" content="Professional mobile and desktop application development company specializing in Android, iOS and custom solutions since 2011.">
+  <meta property="og:image" content="https://liquidlabs.ca/img/liquid-labs-og-image.png">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://liquidlabs.ca/">
+  <meta name="twitter:title" content="Liquid Labs Inc. - Professional App Development">
+  <meta name="twitter:description" content="Professional mobile and desktop application development company specializing in Android, iOS and custom solutions since 2011.">
+  <meta name="twitter:image" content="https://liquidlabs.ca/img/liquid-labs-og-image.png">
 
   <!-- Favicons -->
   <link href="img/liquid-labs-logo-trans-x-small.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +62,84 @@
       box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2),
         0 0 1rem rgba(0, 123, 255, 0.3);
     }
+    
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.9);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      z-index: 1000;
+      display: none;
+    }
+    
+    .cookie-banner p {
+      margin-bottom: 0.5rem;
+    }
+    
+    .cookie-btn {
+      background: #2dc997;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .social-links a {
+      font-size: 18px;
+      display: inline-block;
+      background: #2dc997;
+      color: #fff;
+      line-height: 1;
+      padding: 12px 0;
+      margin-right: 8px;
+      border-radius: 50%;
+      text-align: center;
+      width: 42px;
+      height: 42px;
+      transition: 0.3s;
+    }
+    
+    .social-links a:hover {
+      background: #55d8af;
+      transform: translateY(-5px);
+    }
   </style>
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Liquid Labs Inc.",
+    "url": "https://liquidlabs.ca",
+    "logo": "https://liquidlabs.ca/img/liquid-labs-logo-trans-x-small.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-647-849-4705",
+      "contactType": "customer service",
+      "email": "contact@liquidlabs.ca"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1292 Tall Pine Ave",
+      "addressLocality": "Oshawa",
+      "addressRegion": "ON",
+      "postalCode": "L1K 0G3",
+      "addressCountry": "CA"
+    },
+    "sameAs": [
+      "https://x.com/LiquidLabsInc",
+      "https://github.com/liquidlabs",
+      "https://www.linkedin.com/company/liquid-labs-inc-/about/"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -70,6 +163,7 @@
           <li><a href="#android-projects">Showcase</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
+          <li><a href="privacy-policy.html">Privacy</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -291,7 +385,7 @@
       <!-- Uncomment below if you wan to use dynamic maps -->
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.7164756517795!2d-79.41964934876279!3d43.77874395221865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3ddd210999f5%3A0x69b3c597e80d9dc!2sLiquid%20Labs%20Inc.!5e0!3m2!1sen!2sca!4v1576815914241!5m2!1sen!2sca"
-        width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+        width="100%" height="380" frameborder="0" style="border:0" allowfullscreen title="Liquid Labs Inc. Location"></iframe>
 
       <div class="container wow fadeInUp mt-5">
         <div class="row justify-content-center">
@@ -303,46 +397,45 @@
               </div>
               <div>
                 <i class="fa fa-envelope"></i>
-                <p>contact@liquidlabs.ca</p>
+                <p><a href="mailto:contact@liquidlabs.ca" style="color: inherit;">contact@liquidlabs.ca</a></p>
               </div>
               <div>
                 <i class="fa fa-phone"></i>
-                <p>+1 647-849-4705</p>
+                <p><a href="tel:+16478494705" style="color: inherit;">+1 647-849-4705</a></p>
               </div>
             </div>
             <div class="social-links">
               <!-- Icons from https://fontawesome.com/v4/icons/ -->
-              <a href="https://x.com/LiquidLabsInc" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://x.com/LiquidLabsInc" aria-label="X (formerly Twitter)" title="X (formerly Twitter)" class="twitter"><i class="fa fa-twitter"></i></a>
               <!--              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>-->
               <!--              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>-->
-              <a href="https://github.com/liquidlabs" class="google-plus"><i class="fa fa-github"></i></a>
-              <a href="https://www.linkedin.com/company/liquid-labs-inc-/about/" class="linkedin"><i
-                  class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/liquidlabs" aria-label="GitHub" title="GitHub" class="google-plus"><i class="fa fa-github"></i></a>
+              <a href="https://www.linkedin.com/company/liquid-labs-inc-/about/" aria-label="LinkedIn" title="LinkedIn" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
           <div class="col-lg-5 col-md-8">
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
+              <form action="contactform/contact-handler.php" method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" aria-required="true" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                    data-rule="email" data-msg="Please enter a valid email" />
+                    data-rule="email" data-msg="Please enter a valid email" aria-required="true" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" aria-required="true" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
                   <textarea class="form-control" name="message" rows="5" data-rule="required"
-                    data-msg="Please write something for us" placeholder="Message"></textarea>
+                    data-msg="Please write something for us" placeholder="Message" aria-required="true"></textarea>
                   <div class="validation"></div>
                 </div>
                 <div class="text-center"><button type="submit" aria-label="Send message">Send Message</button></div>
@@ -361,11 +454,33 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Quick Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#android-projects">Showcase</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h4>Newsletter</h4>
+            <p>Stay updated with our latest projects and news</p>
+            <form action="newsletter-subscribe.php" method="post" class="form-inline">
+              <div class="form-group mb-2">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <div class="container">
       <div class="copyright">
-        &copy; Copyright 2011-2025 <strong>Liquid Labs Inc</strong>. All Rights Reserved
+        &copy; Copyright 2011-<script>document.write(new Date().getFullYear())</script> <strong>Liquid Labs Inc</strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!--
@@ -378,6 +493,12 @@
       </div>
     </div>
   </footer><!-- #footer -->
+
+  <div class="cookie-banner" id="cookie-banner">
+    <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+    <button class="cookie-btn" id="accept-cookies">Accept</button>
+    <a href="privacy-policy.html" class="cookie-btn">Learn More</a>
+  </div>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
@@ -397,6 +518,59 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  
+  <script>
+    // Cookie consent functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const cookieBanner = document.getElementById('cookie-banner');
+      const acceptCookieBtn = document.getElementById('accept-cookies');
+      
+      // Check if user has already accepted cookies
+      if (!localStorage.getItem('cookiesAccepted')) {
+        cookieBanner.style.display = 'block';
+      }
+      
+      acceptCookieBtn.addEventListener('click', function() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        cookieBanner.style.display = 'none';
+      });
+      
+      // Form validation enhancement
+      const contactForm = document.querySelector('.contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          let isValid = true;
+          const name = document.getElementById('name');
+          const email = document.getElementById('email');
+          const subject = document.getElementById('subject');
+          const message = document.querySelector('textarea[name="message"]');
+          
+          // Simple validation
+          if (name.value.trim().length < 4) {
+            isValid = false;
+          }
+          
+          if (!/^\S+@\S+\.\S+$/.test(email.value)) {
+            isValid = false;
+          }
+          
+          if (subject.value.trim().length < 4) {
+            isValid = false;
+          }
+          
+          if (message.value.trim().length < 10) {
+            isValid = false;
+          }
+          
+          if (!isValid) {
+            e.preventDefault();
+            document.getElementById('errormessage').textContent = 'Please check your inputs and try again.';
+            document.getElementById('errormessage').style.display = 'block';
+          }
+        });
+      }
+    });
+  </script>
 
 </body>
 
