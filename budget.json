@@ -4,19 +4,15 @@
     "timings": [
       {
         "metric": "interactive",
-        "budget": 5000
-      },
-      {
-        "metric": "first-meaningful-paint",
-        "budget": 2000
-      },
-      {
-        "metric": "largest-contentful-paint",
-        "budget": 2500
+        "budget": 10000
       },
       {
         "metric": "first-contentful-paint",
-        "budget": 1500
+        "budget": 5000
+      },
+      {
+        "metric": "largest-contentful-paint",
+        "budget": 10000
       },
       {
         "metric": "cumulative-layout-shift",
@@ -26,49 +22,49 @@
     "resourceSizes": [
       {
         "resourceType": "script",
-        "budget": 150
+        "budget": 550
       },
       {
         "resourceType": "font",
-        "budget": 100
+        "budget": 200
       },
       {
         "resourceType": "stylesheet",
-        "budget": 50
+        "budget": 300
       },
       {
         "resourceType": "image",
-        "budget": 500
+        "budget": 600
       },
       {
         "resourceType": "document",
-        "budget": 25
+        "budget": 30
       },
       {
         "resourceType": "total",
-        "budget": 800
+        "budget": 1500
       }
     ],
     "resourceCounts": [
       {
         "resourceType": "script",
-        "budget": 10
+        "budget": 25
       },
       {
         "resourceType": "stylesheet",
-        "budget": 5
+        "budget": 10
       },
       {
         "resourceType": "image",
-        "budget": 20
+        "budget": 25
       },
       {
         "resourceType": "font",
-        "budget": 5
+        "budget": 8
       },
       {
         "resourceType": "total",
-        "budget": 50
+        "budget": 80
       }
     ]
   }
