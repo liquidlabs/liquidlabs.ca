@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Keep Alive - Android">
+  <meta name="author" content="Liquid Labs Inc.">
+  <link rel="icon" href="../../img/liquid-labs-square-logo.png">
+
+  <title>Keep Alive - Android</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <svg class="align-middle" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+          fill="#e8eaed">
+          <path
+            d="M40-240q9-107 65.5-197T256-580l-74-128q-6-9-3-19t13-15q8-5 18-2t16 12l74 128q86-36 180-36t180 36l74-128q6-9 16-12t18 2q10 5 13 15t-3 19l-74 128q94 53 150.5 143T920-240H40Zm240-110q21 0 35.5-14.5T330-400q0-21-14.5-35.5T280-450q-21 0-35.5 14.5T230-400q0 21 14.5 35.5T280-350Zm400 0q21 0 35.5-14.5T730-400q0-21-14.5-35.5T680-450q-21 0-35.5 14.5T630-400q0 21 14.5 35.5T680-350Z" />
+        </svg>
+        Keep Alive
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="terms-of-service.html">Terms of Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacy.html">Privacy Policy</a>
+          </li>
+        </ul>
+
+        <!-- GitHub Logo CTA -->
+        <a href="https://github.com/hossain-khan/android-keep-alive" target="_blank" class="btn btn-outline-light">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          View on GitHub
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main role="main" class="container">
+    <h1 class="mt-5">Keep Alive Android App</h1>
+
+    <div class="jumbotron my-4">
+      <h2 class="display-5">
+        <span class="text-muted">💓 Keep Alive</span>
+        <small class="text-muted">— Your app watchdog!</small>
+      </h2>
+      <p class="lead">
+        A simple app to keep specific apps alive by checking if they are running. If not, they will be attempted to start for you.
+      </p>
+    </div>
+
+    <section class="alert alert-warning mb-5">
+      <h4 class="alert-heading">🛑 <strong>STOP</strong> 🛑 - Know before you use ✋</h4>
+      <p>This app is designed with a very specific use case in mind. It is important to understand what this app does and how.</p>
+      <ul class="mb-0">
+        <li>App is designed to be <strong><em>always</em></strong> running in the foreground to watch and restart other applications.</li>
+        <li>App is <strong>NOT</strong> optimized for battery and will cause high battery 🪫 drain. Ideally, this <strong>should not</strong> be used on your primary phone that you use daily.</li>
+        <li>ℹ️ This app works best on a secondary phone plugged into a power cable 24/7.</li>
+        <li>App contains some additional features like Remote Logging and Heartbeat monitoring. However, the app can be used without enabling those features.</li>
+      </ul>
+    </section>
+
+    <section class="features mb-5">
+      <h3 class="mb-4">📚 How to use the app</h3>
+      <ol>
+        <li>Launch the app and accept all the required permissions.</li>
+        <li>Once all permissions are active, you will see 2 options:
+          <ul>
+            <li>Configure apps that should be running</li>
+            <li>Configure app settings like interval of checking for app</li>
+          </ul>
+        </li>
+        <li>Add app that you want to be checked periodically</li>
+        <li>Done ✔️
+          <ul>
+            <li>This app will always run in the foreground, continuously checking if your selected apps are active. If any are not, it will automatically restart them for you.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section class="limitations mb-5">
+      <h3 class="mb-4">Limitations 💔</h3>
+      <div class="card">
+        <div class="card-body">
+          <p>Despite having many needed permissions, this app may still not work due to the strict security of Android.</p>
+          <ul>
+            <li>One known issue is related to receiving <code>RECEIVE_BOOT_COMPLETED</code> event that is needed to start the watchdog service of this app. However, the <code>RECEIVE_BOOT_COMPLETED</code> event is not delivered until user unlocks the device after phone is restarted or in case phone got soft-started because of very low memory pressure.</li>
+            <li>In that case, this "Keep Alive" app will fail to start configured apps until the device is unlocked manually.</li>
+            <li>Another known issue is, even though foreground service is running, it does not trigger the periodic checks based on your configured interval. This has been noticed on Samsung Galaxy S23, while on other phones it works. So, there might be some bug or manufacturer or device specific issue. Take a look into "Monitor Activity" to see how checks are doing.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="permissions mb-5">
+      <h3 class="mb-4">🔐 Sensitive permissions required ⚠️</h3>
+      <div class="card">
+        <div class="card-body">
+          <p>Here are the permissions needed for the app along with a summary of why they are needed:</p>
+          <ul class="list-unstyled">
+            <li class="mb-2">🌐 <strong>INTERNET</strong> - Required to send logs to an API endpoint and send heartbeat check. Both are optional and configurable in the app.</li>
+            <li class="mb-2">⚙️ <strong>FOREGROUND_SERVICE</strong> - Allows the app to run a foreground service, which is necessary for the Watchdog Service to monitor other apps and keep them alive by restarting them.</li>
+            <li class="mb-2">🔄 <strong>RECEIVE_BOOT_COMPLETED</strong> - Allows the app to receive the BOOT_COMPLETED broadcast, enabling it to start itself and monitor the apps that are configured to keep alive.</li>
+            <li class="mb-2">🔋 <strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong> - Needed to request the user to exclude the app from battery optimizations, ensuring the app and it's Watchdog Service can run continuously without being restricted by the system.</li>
+            <li class="mb-2">🔔 <strong>POST_NOTIFICATIONS</strong> - Allows the app to post notifications, which is essential for notifying users about ongoing watchdog activity.</li>
+            <li class="mb-2">📦 <strong>QUERY_ALL_PACKAGES</strong> - Required to query and interact with all installed packages, which is necessary for the app's functionality to monitor and select apps in the app settings.</li>
+            <li class="mb-2">📊 <strong>PACKAGE_USAGE_STATS</strong> - Allows the app to access usage statistics, which is necessary for knowing if specific apps have been recently used.</li>
+            <li class="mb-2">🪟 <strong>SYSTEM_ALERT_WINDOW</strong> - Required to draw overlays on top of other apps, which is necessary for certain UI elements or notifications that need to be displayed over other apps. And also start other apps from the background service.</li>
+          </ul>
+          <p class="text-muted"><small>Most of the permissions listed above are discouraged and or restricted. Please be sure to use the app with caution.</small></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tech-info mb-5">
+      <div class="card bg-light">
+        <div class="card-body">
+          <h3 class="card-title">Open Source</h3>
+          <p class="card-text">
+            This app is open source! You can view the source code, contribute, or learn more about how it works on GitHub.
+          </p>
+          <div class="text-center mt-4">
+            <a href="https://github.com/hossain-khan/android-keep-alive" class="btn btn-primary btn-lg">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner image -->
+    <div class="text-center mt-5">
+      <img src="../../img/liquid-labs-banner-image.png" class="img-fluid border shadow-lg" alt="Banner Image">
+    </div>
+    <br />
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <span class="text-muted">&copy; 2011-2025 Liquid Labs Inc.</span>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <a href="../../index.html">
+            <img src="../../img/liquid-labs-logo-trans-small.png" alt="Liquid Labs Logo" height="32" class="ml-2">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../js/vendor/popper.min.js"></script>
+  <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
