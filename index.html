@@ -448,35 +448,7 @@
               <a href="https://www.linkedin.com/company/liquid-labs-inc-/about/" aria-label="LinkedIn" title="LinkedIn" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
-          <div class="col-lg-5 col-md-8">
-            <div class="form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="contactform/contact-handler.php" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" aria-required="true" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                    data-rule="email" data-msg="Please enter a valid email" aria-required="true" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" aria-required="true" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required"
-                    data-msg="Please write something for us" placeholder="Message" aria-required="true"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="text-center"><button type="submit" aria-label="Send message">Send Message</button></div>
-              </form>
-            </div>
-          </div>
+
         </div>
       </div>
     </section><!-- #contact -->
@@ -489,8 +461,8 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
             <h4>Quick Links</h4>
             <ul class="list-unstyled">
               <li><a href="#hero">Home</a></li>
@@ -499,16 +471,6 @@
               <li><a href="#contact">Contact Us</a></li>
               <li><a href="privacy-policy.html">Privacy Policy</a></li>
             </ul>
-          </div>
-          <div class="col-lg-6">
-            <h4>Newsletter</h4>
-            <p>Stay updated with our latest projects and news</p>
-            <form action="newsletter-subscribe.php" method="post" class="form-inline">
-              <div class="form-group mb-2">
-                <input type="email" class="form-control" placeholder="Your Email" required>
-              </div>
-              <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
-            </form>
           </div>
         </div>
       </div>
@@ -548,9 +510,6 @@
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
 
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
   
@@ -569,41 +528,6 @@
         localStorage.setItem('cookiesAccepted', 'true');
         cookieBanner.style.display = 'none';
       });
-      
-      // Form validation enhancement
-      const contactForm = document.querySelector('.contactForm');
-      if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-          let isValid = true;
-          const name = document.getElementById('name');
-          const email = document.getElementById('email');
-          const subject = document.getElementById('subject');
-          const message = document.querySelector('textarea[name="message"]');
-          
-          // Simple validation
-          if (name.value.trim().length < 4) {
-            isValid = false;
-          }
-          
-          if (!/^\S+@\S+\.\S+$/.test(email.value)) {
-            isValid = false;
-          }
-          
-          if (subject.value.trim().length < 4) {
-            isValid = false;
-          }
-          
-          if (message.value.trim().length < 10) {
-            isValid = false;
-          }
-          
-          if (!isValid) {
-            e.preventDefault();
-            document.getElementById('errormessage').textContent = 'Please check your inputs and try again.';
-            document.getElementById('errormessage').style.display = 'block';
-          }
-        });
-      }
     });
   </script>
 
