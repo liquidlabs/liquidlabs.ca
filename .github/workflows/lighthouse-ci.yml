@@ -35,6 +35,7 @@ jobs:
             http://localhost:8080/privacy-policy.html
             http://localhost:8080/android/remote-notify/
             http://localhost:8080/android/weather-alert/
+            http://localhost:8080/android/device-universe/
           budgetPath: ./budget.json
           uploadArtifacts: true
           temporaryPublicStorage: true
