@@ -34,7 +34,7 @@
       },
       {
         "resourceType": "image",
-        "budget": 600
+        "budget": 650
       },
       {
         "resourceType": "document",
@@ -42,7 +42,7 @@
       },
       {
         "resourceType": "total",
-        "budget": 1500
+        "budget": 1550
       }
     ],
     "resourceCounts": [
