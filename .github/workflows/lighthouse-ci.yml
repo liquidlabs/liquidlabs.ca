@@ -36,6 +36,7 @@ jobs:
             http://localhost:8080/android/remote-notify/
             http://localhost:8080/android/weather-alert/
             http://localhost:8080/android/device-universe/
+            http://localhost:8080/android/math-tutor/
           budgetPath: ./budget.json
           uploadArtifacts: true
           temporaryPublicStorage: true
