@@ -66,50 +66,163 @@
 
         <section class="my-4">
             <h2>Information We Collect</h2>
-            <h3>Data Stored Locally</h3>
-            <p>We store the following information only on the user's device; it is never transmitted to our servers:</p>
+            
+            <h3>Information Stored Locally on Your Device</h3>
+            <p>The following information is stored <strong>only on your device</strong> and is never transmitted to our servers:</p>
             <ul>
-                <li>Child's first name (optional) — personalization</li>
-                <li>Grade level selection — adaptive difficulty</li>
-                <li>Practice session history, game scores, badges, and preferences — progress tracking</li>
+                <li><strong>Child's first name (optional)</strong> — Personalization of greetings</li>
+                <li><strong>Grade level selection</strong> — Adjusting problem difficulty</li>
+                <li><strong>Practice session history</strong> — Progress tracking</li>
+                <li><strong>Game scores and times</strong> — Personal best tracking</li>
+                <li><strong>Badge achievements</strong> — Motivation and rewards</li>
+                <li><strong>App preferences</strong> — Customization settings</li>
             </ul>
+            <p class="text-muted"><em>We do NOT have access to any of this locally stored data.</em></p>
 
-            <h3>Optional Analytics</h3>
-            <p>If enabled in Settings, we collect anonymized, aggregate analytics (e.g., screen views, session durations, crashes) to improve the app. Analytics can be disabled at any time in Settings.</p>
+            <h3>Analytics Data (Optional)</h3>
+            <p>If analytics is enabled (it can be disabled in Settings), we collect <strong>anonymized, aggregate data</strong> through Firebase Analytics:</p>
+            <ul>
+                <li>Screen views — Understanding app usage</li>
+                <li>Feature usage — Improving app features</li>
+                <li>Session duration — App performance</li>
+                <li>Crash reports — Bug fixing</li>
+                <li>Device type — Compatibility testing</li>
+            </ul>
+            <p><strong>Analytics does NOT collect:</strong> Names, personal information, location data, photos, media, contact information, or any information that could identify your child.</p>
+
+            <h3>How to Disable Analytics</h3>
+            <p>Parents can disable analytics collection at any time:</p>
+            <ol>
+                <li>Open the app</li>
+                <li>Go to <strong>Settings</strong></li>
+                <li>Scroll to <strong>Privacy</strong> section</li>
+                <li>Toggle off <strong>Analytics</strong></li>
+            </ol>
+            <p>When disabled, no usage data is collected or transmitted.</p>
         </section>
 
         <section class="my-4">
             <h2>How We Use Information</h2>
+            <h3>Local Data Usage</h3>
             <ul>
-                <li>Provide and personalize the learning experience</li>
-                <li>Adjust difficulty and track progress</li>
-                <li>Fix crashes and improve performance (anonymized)</li>
+                <li><strong>Personalization:</strong> Display the child's name in greetings (if provided)</li>
+                <li><strong>Difficulty Adjustment:</strong> Use grade level to show appropriate math problems</li>
+                <li><strong>Progress Tracking:</strong> Show practice history, streaks, and statistics</li>
+                <li><strong>Motivation:</strong> Award badges and track achievements</li>
+                <li><strong>Preferences:</strong> Remember audio, haptic, and display settings</li>
+            </ul>
+
+            <h3>Analytics Data Usage (if enabled)</h3>
+            <ul>
+                <li><strong>App Improvement:</strong> Understand which features are used most</li>
+                <li><strong>Bug Fixing:</strong> Identify and resolve crashes</li>
+                <li><strong>Performance:</strong> Ensure the app runs smoothly on various devices</li>
             </ul>
         </section>
 
         <section class="my-4">
             <h2>What We Do NOT Collect</h2>
-            <p>We do not collect names, email addresses, location, photos, contacts, or any other personally identifiable information.</p>
+            <p>We want to be clear about what we <strong>never</strong> collect:</p>
+            <ul>
+                <li>Full names or surnames</li>
+                <li>Email addresses</li>
+                <li>Phone numbers</li>
+                <li>Physical addresses</li>
+                <li>Photos or videos</li>
+                <li>Location data (GPS, IP-based, or otherwise)</li>
+                <li>Contact lists</li>
+                <li>Browsing history</li>
+                <li>Social media accounts</li>
+                <li>Payment information</li>
+                <li>Device identifiers for advertising</li>
+                <li>Any personally identifiable information (PII)</li>
+            </ul>
         </section>
 
         <section class="my-4">
             <h2>Data Storage & Security</h2>
-            <p>All personal data is stored encrypted on the device. Analytics data, when used, is anonymized and transmitted securely. We do not sell or share personal data.</p>
+            <h3>Local Storage</h3>
+            <ul>
+                <li>All personal data is stored in encrypted local databases on your device</li>
+                <li>Data is protected by your device's security features (PIN, fingerprint, etc.)</li>
+                <li>We cannot access locally stored data</li>
+            </ul>
+
+            <h3>Analytics Data (if enabled)</h3>
+            <ul>
+                <li>Anonymized analytics data is processed by Firebase (Google)</li>
+                <li>Data is encrypted in transit using HTTPS</li>
+                <li>No personal identifiers are collected or stored</li>
+            </ul>
         </section>
 
         <section class="my-4">
             <h2>Children & Parental Controls</h2>
-            <p>The app is designed for children ages 5–8 and complies with COPPA and Google Play Families Policy. Parents can review or delete app data via Settings → Clear App Data and can disable analytics.</p>
+            <p>The app is designed for children ages 5–8 and complies with:</p>
+            <ul>
+                <li>Children's Online Privacy Protection Act (COPPA)</li>
+                <li>Google Play Families Policy</li>
+                <li>General Data Protection Regulation (GDPR) where applicable</li>
+            </ul>
+            <p><strong>Parental Rights:</strong> Parents can:</p>
+            <ul>
+                <li>Review all data stored in the app (Settings → Stats)</li>
+                <li>Delete all app data (Settings → Clear App Data)</li>
+                <li>Disable analytics (Settings → Privacy)</li>
+                <li>Contact us with privacy questions</li>
+            </ul>
         </section>
 
         <section class="my-4">
             <h2>Third-Party Services</h2>
-            <p>We may use COPPA-compliant services such as Firebase Analytics and Firebase Crashlytics for anonymized analytics and crash reporting; these services do not collect personal information from children.</p>
+            <h3>Firebase Analytics (Google)</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Anonymous usage analytics</li>
+                <li><strong>Data Collected:</strong> Non-personal usage statistics</li>
+                <li><strong>Optional:</strong> Can be disabled in Settings</li>
+            </ul>
+
+            <h3>Firebase Crashlytics (Google)</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Crash reporting for bug fixes</li>
+                <li><strong>Data Collected:</strong> Device type, OS version, crash logs</li>
+                <li><strong>No PII:</strong> Does not collect personal information</li>
+            </ul>
+
+            <p><strong>Important:</strong> We do not use any advertising SDKs or networks.</p>
         </section>
 
         <section class="my-4">
-            <h2>International Users & Changes</h2>
-            <p>If using the app outside the U.S., local data remains on the device; analytics (if enabled) may be processed in the U.S. We may update this policy; changes will be posted here and the "Last updated" date revised.</p>
+            <h2>Data Sharing</h2>
+            <p><strong>We do not sell, rent, or share any personal information.</strong></p>
+            <p>We may share anonymized, aggregate analytics data only to:</p>
+            <ul>
+                <li>Improve our app's performance</li>
+                <li>Fix bugs and crashes</li>
+                <li>Understand feature usage</li>
+            </ul>
+            <p>This data cannot identify any individual user.</p>
+        </section>
+
+        <section class="my-4">
+            <h2>International Users</h2>
+            <p>If you are using our app from outside the United States:</p>
+            <ul>
+                <li>Local data remains on your device in your country</li>
+                <li>If analytics is enabled, data may be processed in the United States</li>
+                <li>We comply with GDPR for European users</li>
+                <li>You can disable analytics to prevent any data transfer</li>
+            </ul>
+        </section>
+
+        <section class="my-4">
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. When we do:</p>
+            <ul>
+                <li>We will update the "Last updated" date</li>
+                <li>Significant changes will be communicated through app updates</li>
+                <li>Continued use after changes indicates acceptance</li>
+            </ul>
         </section>
 
         <section class="my-4">
