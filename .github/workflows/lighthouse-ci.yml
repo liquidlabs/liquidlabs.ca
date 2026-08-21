@@ -37,6 +37,7 @@ jobs:
             http://localhost:8080/android/weather-alert/
             http://localhost:8080/android/device-universe/
             http://localhost:8080/android/math-tutor/
+            http://localhost:8080/android/codematex/
           budgetPath: ./budget.json
           uploadArtifacts: true
           temporaryPublicStorage: true
