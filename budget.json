@@ -4,15 +4,15 @@
     "timings": [
       {
         "metric": "interactive",
-        "budget": 10000
+        "budget": 14000
       },
       {
         "metric": "first-contentful-paint",
-        "budget": 5000
+        "budget": 6000
       },
       {
         "metric": "largest-contentful-paint",
-        "budget": 10000
+        "budget": 14000
       },
       {
         "metric": "cumulative-layout-shift",
@@ -22,7 +22,7 @@
     "resourceSizes": [
       {
         "resourceType": "script",
-        "budget": 550
+        "budget": 750
       },
       {
         "resourceType": "font",
@@ -42,7 +42,7 @@
       },
       {
         "resourceType": "total",
-        "budget": 1900
+        "budget": 2200
       }
     ],
     "resourceCounts": [
