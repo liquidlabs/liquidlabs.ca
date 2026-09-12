@@ -61,15 +61,15 @@
 
         <div class="content">
             <h2 class="mt-4">Privacy Policy for CodeMateX</h2>
-            <p class="text-muted"><em>Last updated: August 2026</em></p>
+            <p class="text-muted"><em>Last updated: September 2026</em></p>
             <p>Welcome to <b>CodeMateX</b> ("the App"), developed by Liquid Labs Inc. Your privacy is our highest priority. 
             This Privacy Policy describes our practices regarding information collection, usage, and disclosure when you use CodeMateX on Android.</p>
 
             <h3 class="mt-4">1. Zero Cloud Data Collection</h3>
             <p>CodeMateX is built from the ground up as a <strong>100% on-device AI application</strong>:</p>
             <ul>
-                <li><strong>Your Code and Prompts:</strong> Any source code, questions, prompts, and chat sessions you submit are processed entirely on your physical device hardware using local on-device runtimes (such as Google LiteRT-LM).</li>
-                <li><strong>No Cloud Inference:</strong> Your queries and code snippets are never transmitted to external servers, cloud AI APIs, or third-party inference backends.</li>
+                <li><strong>Your AI Prompts and Conversations:</strong> Any questions, prompts, and chat sessions you submit to the AI tutor are processed entirely on your physical device hardware using local on-device runtimes (such as Google LiteRT-LM).</li>
+                <li><strong>No Cloud AI Inference:</strong> Your queries and AI conversation history are never transmitted to external servers, cloud AI APIs, or third-party inference backends.</li>
                 <li><strong>No Account Required:</strong> The App does not require registration, login, email addresses, or usernames.</li>
             </ul>
 
@@ -81,9 +81,11 @@
             </ul>
 
             <h3 class="mt-4">3. Network Usage</h3>
-            <p>The App requests standard network permissions (<code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>) exclusively for the following optional feature:</p>
+            <p>The App requests standard network permissions (<code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>) exclusively for the following optional features:</p>
             <ul>
-                <li>Downloading public, open-source on-device AI model weights (such as Gemma) directly from verified model repositories when explicitly requested by the user in the Model Manager.</li>
+                <li><strong>On-Device AI Model Weights:</strong> Downloading public, open-source model weights (such as Gemma, Qwen, or Phi-4) directly from verified repositories when explicitly initiated by the user in the Model Manager.</li>
+                <li><strong>Network State Monitoring:</strong> Checking connectivity status to prevent partial downloads on metered connections and automatically adapt the app into offline reading mode when disconnected.</li>
+                <li><strong>Optional In-App Code Execution:</strong> When a user explicitly taps "Run Code" on a lesson snippet, that code snippet is transmitted via encrypted HTTPS to an execution sandbox proxy (<code>code-playground.gohk.xyz</code> or the official Kotlin Playground API) solely to compile, execute, and return standard terminal output. No personal data, user accounts, telemetry, or AI conversation prompts are attached, logged, or retained.</li>
             </ul>
             <p>The App does not integrate any third-party analytics trackers, advertising SDKs, or remote diagnostic telemetry.</p>
 
