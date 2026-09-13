@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Snippet — Privacy Policy">
+  <meta name="author" content="Liquid Labs Inc.">
+  <link rel="icon" href="../../img/liquid-labs-square-logo.png">
+
+  <title>Snippet — Privacy Policy</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+          <path d="M40-240q9-107 65.5-197T256-580l-74-128q-6-9-3-19t13-15q8-5 18-2t16 12l74 128q86-36 180-36t180 36l74-128q6-9 16-12t18 2q10 5 13 15t-3 19l-74 128q94 53 150.5 143T920-240H40Zm240-110q21 0 35.5-14.5T330-400q0-21-14.5-35.5T280-450q-21 0-35.5 14.5T230-400q0 21 14.5 35.5T280-350Zm400 0q21 0 35.5-14.5T730-400q0-21-14.5-35.5T680-450q-21 0-35.5 14.5T630-400q0 21 14.5 35.5T680-350Z" />
+        </svg>
+        Snippet
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="terms-of-service.html">Terms of Service</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="privacy.html">Privacy Policy <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+
+        <!-- Google Play Logo Install CTA -->
+        <a href="https://play.google.com/store/apps/details?id=dev.hossain.codesnippet" target="_blank" rel="noopener noreferrer">
+          <img src="../../img/google-play.svg" class="img-fluid" alt="Get it on Google Play" style="max-height: 50px;">
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main role="main" class="container">
+    <div class="content">
+      <h2 class="mt-4 font-weight-bold">Privacy Policy for Snippet</h2>
+      <p class="text-muted"><em>Last updated: September 13, 2026</em></p>
+      <p>
+        This Privacy Policy explains how <strong>Snippet</strong> ("we", "our", or "the application"), developed by <strong>Liquid Labs Inc.</strong>, handles information when you use our mobile application (Application ID: <code>dev.hossain.codesnippet</code>).
+      </p>
+
+      <hr class="my-4">
+
+      <h3 class="mt-4 font-weight-bold">1. Summary: Offline-First &amp; Zero Tracking</h3>
+      <p>Snippet is built on an <strong>offline-first, privacy-respecting architecture</strong>:</p>
+      <ul>
+        <li><strong>No Personal Data Collected:</strong> We do not collect, store, sell, or transmit your name, email, phone number, physical location, or personal identity.</li>
+        <li><strong>No Analytics or Telemetry SDKs:</strong> The application does not contain Google Analytics, Firebase Analytics, Sentry, Facebook SDK, or any marketing or advertising trackers.</li>
+        <li><strong>No Advertising:</strong> Snippet does not display advertisements or access your Android Advertising ID.</li>
+      </ul>
+
+      <h3 class="mt-4 font-weight-bold">2. Information Handled on Your Device</h3>
+      <h5>A. Local Code Snippets &amp; Notes</h5>
+      <p>
+        All code snippets, tags, timestamps, and search indexes you create or import are saved <strong>locally on your device</strong> in a private SQLite database managed by Android Jetpack Room. We have zero access to your code notebook.
+      </p>
+
+      <h5>B. User Credentials &amp; API Keys</h5>
+      <p>
+        If you configure an AI service API key (such as Cloudflare Workers AI or OpenRouter) or a GitHub Personal Access Token (PAT), these credentials are saved locally on your device in secure, private application storage (Android Encrypted DataStore). Credentials are never transmitted to the application developer or any third party other than the specific API provider you explicitly configure.
+      </p>
+
+      <h3 class="mt-4 font-weight-bold">3. Third-Party Service Interactions (User-Initiated)</h3>
+      <p>
+        Snippet does not run an intermediary server. Any external communication occurs directly between your device and the third-party service provider you explicitly interact with:
+      </p>
+      <ol>
+        <li>
+          <strong>GitHub API (<code>api.github.com</code>):</strong>
+          When you connect a GitHub Personal Access Token to sync Gists, your device connects directly to GitHub's servers over secure HTTPS. GitHub's processing of your data is governed by the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
+        </li>
+        <li>
+          <strong>AI Language Model Providers (BYOK):</strong>
+          When you prompt the AI Code Assistant, your query and configured API key are sent over secure HTTPS directly to your selected provider (e.g. Cloudflare Workers AI or OpenRouter). Interaction data is governed by the privacy policy of your respective AI provider.
+        </li>
+      </ol>
+
+      <h3 class="mt-4 font-weight-bold">4. Device Permissions</h3>
+      <p>Snippet requests only the minimal necessary permission to function:</p>
+      <ul>
+        <li><strong><code>android.permission.INTERNET</code>:</strong> Required solely for user-directed AI chat queries and GitHub Gist syncing.</li>
+      </ul>
+      <p>
+        Snippet does not request access to device location, contacts, calendar, camera, microphone, or external storage.
+      </p>
+
+      <h3 class="mt-4 font-weight-bold">5. Data Retention &amp; Deletion</h3>
+      <p>Because all your data is stored locally on your device:</p>
+      <ul>
+        <li>You can delete any snippet, tag, or conversation at any time from within the app interface.</li>
+        <li>You can clear your API keys or disconnect GitHub at any time in Settings.</li>
+        <li>Clearing the application data in Android Settings or uninstalling the app permanently removes all local data from your device.</li>
+      </ul>
+
+      <h3 class="mt-4 font-weight-bold">6. Open Source Transparency</h3>
+      <p>
+        Snippet is open source under the Apache 2.0 license. The complete source code, dependencies, and network logic are publicly verifiable at:
+        <br>
+        <a href="https://github.com/hossain-khan/android-hi-light" target="_blank" rel="noopener noreferrer">https://github.com/hossain-khan/android-hi-light</a>
+      </p>
+
+      <h3 class="mt-4 font-weight-bold">7. Contact Us</h3>
+      <p>If you have any questions or concerns regarding this Privacy Policy, please contact:</p>
+      <ul>
+        <li><strong>Email:</strong> contact@liquidlabs.ca / contact@hossainkhan.com</li>
+        <li><strong>Website:</strong> <a href="https://liquidlabs.ca">https://liquidlabs.ca</a> / <a href="https://hossain.dev">https://hossain.dev</a></li>
+        <li><strong>GitHub Issues:</strong> <a href="https://github.com/hossain-khan/android-hi-light/issues" target="_blank" rel="noopener noreferrer">https://github.com/hossain-khan/android-hi-light/issues</a></li>
+      </ul>
+      <hr>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <span class="text-muted">&copy; 2011-<script>document.write(new Date().getFullYear())</script> Liquid Labs Inc.</span>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <a href="../../index.html">
+            <img src="../../img/liquid-labs-logo-trans-small.png" alt="Liquid Labs Logo" height="32" class="ml-2" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../js/vendor/popper.min.js"></script>
+  <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
