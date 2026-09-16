@@ -4,9 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Snippet — Code Notebook & AI for Android. Organize code snippets, chat with on-device/BYOK AI, export Ray.so-style cards, and sync GitHub Gists.">
+  <meta name="description" content="Snippet — Code Notebook & AI for Android. Organize code snippets, chat with built-in & BYOK AI, export Ray.so-style cards, and sync GitHub Gists.">
   <meta name="author" content="Liquid Labs Inc.">
   <link rel="icon" href="../../img/liquid-labs-square-logo.png">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://liquidlabs.ca/android/snippet/">
+  <meta property="og:title" content="Snippet — Code Notebook &amp; AI for Android">
+  <meta property="og:description" content="Your personal code notebook, AI companion, and Gists sync tool for Android. Powered by compose-highlight.">
+  <meta property="og:image" content="https://liquidlabs.ca/img/android-snippet.png">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Snippet — Code Notebook &amp; AI for Android">
+  <meta name="twitter:description" content="Your personal code notebook, AI companion, and Gists sync tool for Android. Powered by compose-highlight.">
+  <meta name="twitter:image" content="https://liquidlabs.ca/img/android-snippet.png">
 
   <title>Snippet — Code Notebook &amp; AI - Android</title>
 
@@ -51,10 +64,11 @@
           </li>
         </ul>
 
-        <!-- Google Play Logo Install CTA -->
+        <!-- Google Play badge (available once app is live)
         <a href="https://play.google.com/store/apps/details?id=dev.hossain.codesnippet" target="_blank" rel="noopener noreferrer">
           <img src="../../img/google-play.svg" class="img-fluid" alt="Get it on Google Play" style="max-height: 50px;">
         </a>
+        -->
       </div>
     </nav>
   </header>
@@ -80,9 +94,9 @@
         Whether you are saving quick code snippets from StackOverflow, brainstorming architecture with an AI code assistant, syncing your GitHub Gists, or exporting polished code cards for social media, Snippet keeps your developer workflow fast, focused, and completely private.
       </p>
       <div class="mt-4">
-        <a href="https://play.google.com/store/apps/details?id=dev.hossain.codesnippet" class="btn btn-primary btn-lg mr-2 mb-2" target="_blank" rel="noopener noreferrer">
-          Get it on Google Play
-        </a>
+        <button class="btn btn-secondary btn-lg mr-2 mb-2" disabled>
+          Coming Soon to Google Play
+        </button>
         <a href="https://github.com/hossain-khan/android-compose-highlight" class="btn btn-outline-secondary btn-lg mb-2" target="_blank" rel="noopener noreferrer">
           compose-highlight Library
         </a>
@@ -103,7 +117,7 @@
         </div>
         <div class="list-group-item p-4">
           <h5 class="mb-1 font-weight-bold">🤖 AI Code Assistant (BYOK)</h5>
-          <p class="mb-0 text-muted">Multi-turn AI chat to debug compiler errors, explain complex logic, or explore unfamiliar syntax. Bring Your Own Key (BYOK) with Cloudflare Workers AI, OpenRouter, or OpenAI-compatible endpoints. Tap curated prompt badges for Kotlin, TypeScript, Python, Rust, Go, SQL, or Swift, and save generated snippets directly to your notebook with 1 tap.</p>
+          <p class="mb-0 text-muted">Multi-turn AI chat to debug compiler errors, explain complex logic, or explore unfamiliar syntax. Features a built-in Cloudflare Workers AI tutor, plus Bring Your Own Key (BYOK) support for OpenRouter, OpenCode, or custom OpenAI-compatible endpoints. Tap curated prompt badges for Kotlin, TypeScript, Python, Rust, Go, SQL, or Swift, and save generated snippets directly to your notebook with 1 tap.</p>
         </div>
         <div class="list-group-item p-4">
           <h5 class="mb-1 font-weight-bold">🐙 GitHub Gists Two-Way Sync</h5>
@@ -115,7 +129,7 @@
         </div>
         <div class="list-group-item p-4">
           <h5 class="mb-1 font-weight-bold">🛡️ 100% Private &amp; Offline-First</h5>
-          <p class="mb-0 text-muted">Zero analytics trackers, zero advertising SDKs, and zero telemetry. All snippets, tags, and search indexes are stored locally on your device in a secure SQLite database. API keys and GitHub tokens are encrypted with Android Encrypted DataStore.</p>
+          <p class="mb-0 text-muted">Zero analytics trackers, zero advertising SDKs, and zero telemetry. All snippets, tags, and search indexes are stored locally on your device in a secure SQLite database. API keys and GitHub tokens are kept securely in private application sandbox storage via Android Jetpack DataStore.</p>
         </div>
       </div>
     </section>
@@ -224,10 +238,10 @@
           </p>
           <ul class="list-unstyled mb-0">
             <li class="mb-2">🎨 <strong>Jetpack Compose &amp; Material 3 Expressive:</strong> Fully declarative UI with dynamic colors and adaptive layouts for phones, foldables, and tablets.</li>
-            <li class="mb-2">⚡ <strong>compose-highlight:</strong> Open-source syntax highlighting library developed by Liquid Labs Inc.</li>
+            <li class="mb-2">⚡ <strong>compose-highlight:</strong> Open-source syntax highlighting library developed by Hossain Khan / Liquid Labs Inc.</li>
             <li class="mb-2">🏛️ <strong>Slack Circuit UDF:</strong> Unidirectional data flow architecture with clear separation of UI and Presenter logic.</li>
             <li class="mb-2">🔍 <strong>SQLite FTS4:</strong> Fast, local, full-text search indexing on device.</li>
-            <li class="mb-2">🔐 <strong>Encrypted DataStore:</strong> Hardware-backed encryption for user API keys and GitHub tokens.</li>
+            <li class="mb-2">🔐 <strong>Jetpack DataStore:</strong> Private, secure on-device application storage for user API keys and GitHub tokens.</li>
             <li class="mb-2">🚀 <strong>Baseline Profiles:</strong> Ahead-of-time compilation profiles for blazing-fast app startup and fluid scrolling.</li>
           </ul>
         </div>
@@ -243,9 +257,9 @@
             Take your code notebook with you anywhere. Try Snippet on Android today!
           </p>
           <div class="mt-4">
-            <a href="https://play.google.com/store/apps/details?id=dev.hossain.codesnippet" class="btn btn-primary btn-lg mr-2 mb-2" target="_blank" rel="noopener noreferrer">
-              Get it on Google Play
-            </a>
+            <button class="btn btn-secondary btn-lg mr-2 mb-2" disabled>
+              Coming Soon to Google Play
+            </button>
             <a href="https://github.com/hossain-khan/android-compose-highlight" class="btn btn-outline-secondary btn-lg mb-2" target="_blank" rel="noopener noreferrer">
               compose-highlight Library
             </a>
