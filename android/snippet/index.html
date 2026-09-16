@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Snippet — Code Notebook & AI for Android. Organize code snippets, chat with built-in & BYOK AI, export Ray.so-style cards, and sync GitHub Gists.">
+  <meta name="description" content="Snippet — Code notebook for Android and official showcase for the compose-highlight Jetpack Compose library.">
   <meta name="author" content="Liquid Labs Inc.">
   <link rel="icon" href="../../img/liquid-labs-square-logo.png">
 
@@ -12,13 +12,13 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://liquidlabs.ca/android/snippet/">
   <meta property="og:title" content="Snippet — Code Notebook &amp; AI for Android">
-  <meta property="og:description" content="Your personal code notebook, AI companion, and Gists sync tool for Android. Powered by compose-highlight.">
+  <meta property="og:description" content="A personal code notebook for Android and official showcase for the compose-highlight Jetpack Compose library.">
   <meta property="og:image" content="https://liquidlabs.ca/img/android-snippet.png">
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Snippet — Code Notebook &amp; AI for Android">
-  <meta name="twitter:description" content="Your personal code notebook, AI companion, and Gists sync tool for Android. Powered by compose-highlight.">
+  <meta name="twitter:description" content="A personal code notebook for Android and official showcase for the compose-highlight Jetpack Compose library.">
   <meta name="twitter:image" content="https://liquidlabs.ca/img/android-snippet.png">
 
   <title>Snippet — Code Notebook &amp; AI - Android</title>
@@ -79,19 +79,19 @@
       <img src="../../img/android-snippet.png" alt="Snippet App Icon" class="hero-icon mr-3" fetchpriority="high" width="96" height="96">
       <div>
         <h1 class="h2 mb-1 font-weight-bold">Snippet — Code Notebook &amp; AI</h1>
-        <p class="text-muted mb-0">Your personal code notebook, AI companion, and Gists sync tool for Android</p>
+        <p class="text-muted mb-0">A personal code notebook and compose-highlight showcase for Android</p>
       </div>
     </div>
 
     <div class="jumbotron my-4 shadow-sm bg-white border">
       <h2 class="h3 font-weight-bold">
-        <span>⚡ Beautiful Code Notebook. Intelligent Assistant. 100% Private.</span>
+        <span>A personal code notebook &amp; compose-highlight showcase</span>
       </h2>
       <p class="lead mt-3">
-        Snippet is your personal code notebook and developer companion for Android. Designed specifically for programmers, engineers, and computer science students, Snippet lets you capture, organize, search, generate, and share beautiful syntax-highlighted code wherever you go.
+        Snippet is a personal code notebook for Android and the official showcase application for <strong>compose-highlight</strong>, a syntax highlighting library for Jetpack Compose.
       </p>
       <p>
-        Whether you are saving quick code snippets from StackOverflow, brainstorming architecture with an AI code assistant, syncing your GitHub Gists, or exporting polished code cards for social media, Snippet keeps your developer workflow fast, focused, and completely private.
+        It provides a fast, offline-first place to organize code snippets, explore syntax themes on mobile, sync GitHub Gists, and export styled code cards.
       </p>
       <div class="mt-4">
         <button class="btn btn-secondary btn-lg mr-2 mb-2" disabled>
@@ -108,28 +108,28 @@
       <h3 class="mb-4 font-weight-bold">Key Features</h3>
       <div class="list-group shadow-sm">
         <div class="list-group-item p-4">
-          <h5 class="mb-1 font-weight-bold">🎨 Desktop-Grade Syntax Highlighting</h5>
-          <p class="mb-0 text-muted">Powered by <strong>compose-highlight</strong>, enjoy buttery-smooth syntax highlighting right on mobile. Choose from dozens of professional themes (Dracula, Monokai, GitHub Dark/Light, Nord, Solarized, Material Ocean) optimized for readability in Dark and Light modes.</p>
+          <h5 class="mb-1 font-weight-bold">🎨 Syntax Highlighting &amp; Theme Gallery</h5>
+          <p class="mb-0 text-muted">Powered by <strong>compose-highlight</strong>, preview code syntax directly in Jetpack Compose across dozens of popular editor themes (Dracula, Monokai, GitHub Dark/Light, Nord, Solarized, Material Ocean) with full dark and light mode support.</p>
         </div>
         <div class="list-group-item p-4">
-          <h5 class="mb-1 font-weight-bold">📁 Unified Code Notebook &amp; Instant Search</h5>
-          <p class="mb-0 text-muted">A chronological feed keeps all your snippets and clipboard clips organized in one place. Powered by SQLite FTS4 full-text search, instantly search functions, variables, comments, or tags in milliseconds. Ingest code from any app via Android's native share sheet.</p>
+          <h5 class="mb-1 font-weight-bold">📁 Local Code Notebook &amp; Search</h5>
+          <p class="mb-0 text-muted">Keep your code snippets and clipboard clips organized locally with tags and language metadata. Full-text search powered by SQLite Room and FTS4 lets you quickly find saved code, functions, or notes.</p>
         </div>
         <div class="list-group-item p-4">
-          <h5 class="mb-1 font-weight-bold">🤖 AI Code Assistant (BYOK)</h5>
-          <p class="mb-0 text-muted">Multi-turn AI chat to debug compiler errors, explain complex logic, or explore unfamiliar syntax. Features a built-in Cloudflare Workers AI tutor, plus Bring Your Own Key (BYOK) support for OpenRouter, OpenCode, or custom OpenAI-compatible endpoints. Tap curated prompt badges for Kotlin, TypeScript, Python, Rust, Go, SQL, or Swift, and save generated snippets directly to your notebook with 1 tap.</p>
+          <h5 class="mb-1 font-weight-bold">💬 Optional AI Coding Assistant (BYOK)</h5>
+          <p class="mb-0 text-muted">An optional conversational assistant to ask syntax questions or explore code concepts. Includes a built-in Cloudflare Workers AI demo, or connect your own API key (OpenRouter, OpenCode, or custom OpenAI-compatible endpoints).</p>
         </div>
         <div class="list-group-item p-4">
-          <h5 class="mb-1 font-weight-bold">🐙 GitHub Gists Two-Way Sync</h5>
-          <p class="mb-0 text-muted">Connect your GitHub account securely via Personal Access Token (PAT). Browse and read multi-file Gists with markdown and syntax rendering, turn local snippets into public or secret Gists, and sync cloud gists locally with full offline backup.</p>
+          <h5 class="mb-1 font-weight-bold">🐙 GitHub Gists Sync</h5>
+          <p class="mb-0 text-muted">Connect a GitHub Personal Access Token to browse multi-file Gists, inspect revisions, and import or export snippets between your local notebook and GitHub.</p>
         </div>
         <div class="list-group-item p-4">
-          <h5 class="mb-1 font-weight-bold">📸 Styled Code Card Export</h5>
-          <p class="mb-0 text-muted">Generate high-resolution Carbon- and Ray.so-style code card images directly from your device. Customize radiant gradients, window controls (macOS traffic lights), language monograms, and syntax themes to share clean code on Slack, Discord, Reddit, or social media.</p>
+          <h5 class="mb-1 font-weight-bold">🖼️ Styled Code Card Export</h5>
+          <p class="mb-0 text-muted">Export clean code card images with customizable padding, gradient backgrounds, and window controls (Carbon / Ray.so style) to share with teammates or on developer communities.</p>
         </div>
         <div class="list-group-item p-4">
-          <h5 class="mb-1 font-weight-bold">🛡️ 100% Private &amp; Offline-First</h5>
-          <p class="mb-0 text-muted">Zero analytics trackers, zero advertising SDKs, and zero telemetry. All snippets, tags, and search indexes are stored locally on your device in a secure SQLite database. API keys and GitHub tokens are kept securely in private application sandbox storage via Android Jetpack DataStore.</p>
+          <h5 class="mb-1 font-weight-bold">🔒 Offline-First &amp; Private</h5>
+          <p class="mb-0 text-muted">No ads, no analytics, and no telemetry. All snippets, tags, and credentials remain strictly on your device.</p>
         </div>
       </div>
     </section>
@@ -142,8 +142,8 @@
           <div class="card h-100 screenshot-card shadow-sm">
             <img src="img/screenshots/01_snippet_notebook.png" alt="Unified Code Feed" class="screenshot-img" loading="lazy">
             <div class="card-body">
-              <h5 class="card-title font-weight-bold">Unified Code Notebook</h5>
-              <p class="card-text text-muted small">Keep your snippets, clips, and code references in one fast, searchable stream with instant full-text search and language tags.</p>
+              <h5 class="card-title font-weight-bold">Code Notebook</h5>
+              <p class="card-text text-muted small">Browse and search your saved snippets and notes with language tags and full-text search.</p>
             </div>
           </div>
         </div>
@@ -151,8 +151,8 @@
           <div class="card h-100 screenshot-card shadow-sm">
             <img src="img/screenshots/03_chat_assistant.png" alt="AI Code Assistant" class="screenshot-img" loading="lazy">
             <div class="card-body">
-              <h5 class="card-title font-weight-bold">AI Code Assistant</h5>
-              <p class="card-text text-muted small">Ask coding questions, explain logic, and generate snippets in real time with 1-tap save into your local notebook.</p>
+              <h5 class="card-title font-weight-bold">AI Assistant</h5>
+              <p class="card-text text-muted small">Ask syntax questions, explore concepts, and save code blocks directly to your notebook.</p>
             </div>
           </div>
         </div>
@@ -161,7 +161,7 @@
             <img src="img/screenshots/05_github_gists.png" alt="GitHub Gists Integration" class="screenshot-img" loading="lazy">
             <div class="card-body">
               <h5 class="card-title font-weight-bold">GitHub Gists Sync</h5>
-              <p class="card-text text-muted small">Two-way sync with GitHub Gists. Browse multi-file gists with full markdown and code highlighting, or import to local storage.</p>
+              <p class="card-text text-muted small">Browse your GitHub Gists, inspect multi-file revisions, and import or export snippets.</p>
             </div>
           </div>
         </div>
@@ -169,8 +169,8 @@
           <div class="card h-100 screenshot-card shadow-sm">
             <img src="img/screenshots/06_snippet_editor.png" alt="Live Syntax Editor" class="screenshot-img" loading="lazy">
             <div class="card-body">
-              <h5 class="card-title font-weight-bold">Live Syntax Editor</h5>
-              <p class="card-text text-muted small">Capture &amp; edit code on the go with real-time syntax highlighting, custom tag management, and system share sheet ingestion.</p>
+              <h5 class="card-title font-weight-bold">Snippet Editor</h5>
+              <p class="card-text text-muted small">Edit code with syntax highlighting, manage tags, and import code via the Android share sheet.</p>
             </div>
           </div>
         </div>
@@ -178,8 +178,8 @@
           <div class="card h-100 screenshot-card shadow-sm">
             <img src="img/screenshots/07_settings.png" alt="Settings & Encryption" class="screenshot-img" loading="lazy">
             <div class="card-body">
-              <h5 class="card-title font-weight-bold">Secure Local Settings</h5>
-              <p class="card-text text-muted small">Encrypted local credential storage, AI provider configuration (Cloudflare, OpenRouter), and customizable code display themes.</p>
+              <h5 class="card-title font-weight-bold">Settings &amp; Appearance</h5>
+              <p class="card-text text-muted small">Configure syntax themes, font size, line numbers, and optional API keys stored locally on device.</p>
             </div>
           </div>
         </div>
@@ -188,7 +188,7 @@
             <img src="img/screenshots/08_adaptive_landscape.png" alt="Adaptive Landscape & Tablet Layout" class="screenshot-img" loading="lazy">
             <div class="card-body">
               <h5 class="card-title font-weight-bold">Adaptive Layout</h5>
-              <p class="card-text text-muted small">Responsive navigation rail and multi-pane adaptive layout optimized for foldables, tablets, and landscape orientation.</p>
+              <p class="card-text text-muted small">Adaptive navigation rail and layout designed for landscape orientation and larger screens.</p>
             </div>
           </div>
         </div>
@@ -242,7 +242,7 @@
             <li class="mb-2">🏛️ <strong>Slack Circuit UDF:</strong> Unidirectional data flow architecture with clear separation of UI and Presenter logic.</li>
             <li class="mb-2">🔍 <strong>SQLite FTS4:</strong> Fast, local, full-text search indexing on device.</li>
             <li class="mb-2">🔐 <strong>Jetpack DataStore:</strong> Private, secure on-device application storage for user API keys and GitHub tokens.</li>
-            <li class="mb-2">🚀 <strong>Baseline Profiles:</strong> Ahead-of-time compilation profiles for blazing-fast app startup and fluid scrolling.</li>
+            <li class="mb-2">🚀 <strong>Baseline Profiles:</strong> Ahead-of-time compilation profiles for fast startup and smooth scrolling.</li>
           </ul>
         </div>
       </div>
@@ -252,9 +252,9 @@
     <section class="why-use mb-5">
       <div class="card bg-light border-0 shadow-sm text-center p-4">
         <div class="card-body">
-          <h3 class="card-title font-weight-bold">Elevate Your Mobile Code Workflow</h3>
+          <h3 class="card-title font-weight-bold">A Developer Notebook for Android</h3>
           <p class="card-text text-muted max-width-600 mx-auto">
-            Take your code notebook with you anywhere. Try Snippet on Android today!
+            A lightweight, offline-first companion for keeping code snippets and exploring syntax themes on mobile.
           </p>
           <div class="mt-4">
             <button class="btn btn-secondary btn-lg mr-2 mb-2" disabled>
