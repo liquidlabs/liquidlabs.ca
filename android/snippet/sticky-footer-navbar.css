@@ -71,3 +71,7 @@ code {
   background-color: #e9ecef;
   color: #343a40;
 }
+
+.max-width-600 {
+  max-width: 600px;
+}
