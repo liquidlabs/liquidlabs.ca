@@ -68,7 +68,7 @@
         <small class="text-muted">— Your app watchdog!</small>
       </h2>
       <p class="lead">
-        A simple app to keep specific apps alive by checking if they are running. If not, they will be attempted to start for you.
+        A simple app to keep specific apps alive by checking if they are running. If not, the app will attempt to restart them for you.
       </p>
     </div>
 
@@ -125,13 +125,13 @@
             <li class="mb-2">🌐 <strong>INTERNET</strong> - Required to send logs to an API endpoint and send heartbeat check. Both are optional and configurable in the app.</li>
             <li class="mb-2">⚙️ <strong>FOREGROUND_SERVICE</strong> - Allows the app to run a foreground service, which is necessary for the Watchdog Service to monitor other apps and keep them alive by restarting them.</li>
             <li class="mb-2">🔄 <strong>RECEIVE_BOOT_COMPLETED</strong> - Allows the app to receive the BOOT_COMPLETED broadcast, enabling it to start itself and monitor the apps that are configured to keep alive.</li>
-            <li class="mb-2">🔋 <strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong> - Needed to request the user to exclude the app from battery optimizations, ensuring the app and it's Watchdog Service can run continuously without being restricted by the system.</li>
+            <li class="mb-2">🔋 <strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong> - Needed to request the user to exclude the app from battery optimizations, ensuring the app and its Watchdog Service can run continuously without being restricted by the system.</li>
             <li class="mb-2">🔔 <strong>POST_NOTIFICATIONS</strong> - Allows the app to post notifications, which is essential for notifying users about ongoing watchdog activity.</li>
             <li class="mb-2">📦 <strong>QUERY_ALL_PACKAGES</strong> - Required to query and interact with all installed packages, which is necessary for the app's functionality to monitor and select apps in the app settings.</li>
             <li class="mb-2">📊 <strong>PACKAGE_USAGE_STATS</strong> - Allows the app to access usage statistics, which is necessary for knowing if specific apps have been recently used.</li>
             <li class="mb-2">🪟 <strong>SYSTEM_ALERT_WINDOW</strong> - Required to draw overlays on top of other apps, which is necessary for certain UI elements or notifications that need to be displayed over other apps. And also start other apps from the background service.</li>
           </ul>
-          <p class="text-muted"><small>Most of the permissions listed above are discouraged and or restricted. Please be sure to use the app with caution.</small></p>
+          <p class="text-muted"><small>Most of the permissions listed above are discouraged and/or restricted. Please be sure to use the app with caution.</small></p>
         </div>
       </div>
     </section>
@@ -163,7 +163,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <span class="text-muted">&copy; 2011-2025 Liquid Labs Inc.</span>
+          <span class="text-muted">&copy; 2011-<script>document.write(new Date().getFullYear())</script> Liquid Labs Inc.</span>
         </div>
         <div class="col-md-6 text-md-right">
           <a href="../../index.html">
