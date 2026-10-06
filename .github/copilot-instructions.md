@@ -113,22 +113,20 @@ Third-party libraries bundled locally:
 - `easing/` - jQuery Easing
 
 #### `/img/`
-- Company logos, favicons, and app screenshots
-- `/portfolio/` - Subdirectory for portfolio images
+- Company logos, favicons, open graph banners, and app screenshots
 
 #### `/android/`
 Landing pages for Android apps (each has index.html, privacy.html, terms-of-service.html, sticky-footer-navbar.css):
-- `remote-notify/` - Remote Notify app
-- `weather-alert/` - Weather Alert app  
-- `keep-alive/` - Keep Alive app
-- `vision/` - Vision app
-- `trmnl-buddy/` - TRMNL Buddy app
-- `trmnl-display/` - TRMNL Display app
-
-#### `/contactform/`
-- `contactform.js` - Client-side form validation
-- `contact-handler.php` - Server-side handler (pro version needed for full functionality)
-- `Readme.txt` - Notes about pro version
+- `snippet/` - Snippet code notebook & AI showcase
+- `codematex/` - CodeMateX on-device AI coding tutor
+- `device-universe/` - Android Device Universe catalog app
+- `math-tutor/` - Kids Math Pup Tutor app
+- `trmnl-buddy/` - TRMNL Buddy companion app
+- `trmnl-display/` - TRMNL Display manager app
+- `remote-notify/` - Remote Notify device monitor app
+- `weather-alert/` - Weather Alert threshold notifier app  
+- `keep-alive/` - Keep Alive background app watchdog
+- `vision/` - H.K. Vision Muzei wallpaper plugin
 
 #### `/.github/`
 - `/workflows/lighthouse-ci.yml` - Lighthouse CI configuration
@@ -150,8 +148,7 @@ Landing pages for Android apps (each has index.html, privacy.html, terms-of-serv
 
 ### JavaScript Changes  
 - Main site JS is in `js/main.js`
-- Contact form validation in `contactform/contactform.js`
-- Test all interactive features: navigation, smooth scrolling, mobile menu, portfolio filters
+- Test all interactive features: navigation, smooth scrolling, mobile menu, counters
 - Ensure jQuery and plugin dependencies are loaded in correct order
 
 ### Adding New Android App Pages
