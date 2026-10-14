@@ -90,6 +90,16 @@
       cursor: pointer;
     }
 
+    .cookie-btn-decline {
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
     .social-links a {
       font-size: 18px;
       display: inline-block;
@@ -579,6 +589,7 @@
   <div class="cookie-banner" id="cookie-banner">
     <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
     <button class="cookie-btn" id="accept-cookies">Accept</button>
+    <button class="cookie-btn-decline" id="decline-cookies">Decline</button>
     <a href="privacy-policy.html" class="cookie-btn">Learn More</a>
   </div>
 
@@ -603,14 +614,22 @@
     document.addEventListener('DOMContentLoaded', function() {
       const cookieBanner = document.getElementById('cookie-banner');
       const acceptCookieBtn = document.getElementById('accept-cookies');
+      const declineCookieBtn = document.getElementById('decline-cookies');
       
-      // Check if user has already accepted cookies
-      if (!localStorage.getItem('cookiesAccepted')) {
+      // Check if user has already responded to cookie consent
+      if (!localStorage.getItem('cookiesAccepted') && !localStorage.getItem('cookiesDeclined')) {
         cookieBanner.style.display = 'block';
       }
       
       acceptCookieBtn.addEventListener('click', function() {
         localStorage.setItem('cookiesAccepted', 'true');
+        localStorage.removeItem('cookiesDeclined');
+        cookieBanner.style.display = 'none';
+      });
+
+      declineCookieBtn.addEventListener('click', function() {
+        localStorage.setItem('cookiesDeclined', 'true');
+        localStorage.removeItem('cookiesAccepted');
         cookieBanner.style.display = 'none';
       });
     });
