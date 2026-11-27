@@ -4,26 +4,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="color-scheme" content="light dark">
     <meta name="description" content="TRMNL Buddy - Android">
     <meta name="author" content="Liquid Labs Inc.">
     <link rel="icon" href="../../img/liquid-labs-square-logo.png">
 
     <title>TRMNL Buddy - Android</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  <!-- Shared App Subpage Stylesheet -->
+  <link href="../../css/android-app.css" rel="stylesheet">
 </head>
 
 <body>
+  <a href="#main" class="skip-link visually-hidden">Skip to main content</a>
 
     <header>
         <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <nav aria-label="Primary" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="index.html">
-                <img src="../../img/android-trmnl-buddy.png" alt="TRMNL Buddy Logo" height="24" width="24" class="d-inline-block align-middle mr-2 rounded">
+                <picture><source type="image/webp" srcset="../../img/android-trmnl-buddy.webp"><img src="../../img/android-trmnl-buddy.png" alt="TRMNL Buddy Logo" height="24" width="24" class="d-inline-block align-middle mr-2 rounded"></picture>
                 TRMNL Buddy
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -51,7 +50,7 @@
     </header>
 
     <!-- Begin page content -->
-    <main role="main" class="container mt-5">
+    <main id="main" tabindex="-1" class="container mt-5">
 
         <div class="content">
             <h1 class="h2 mt-4 font-weight-bold">Privacy Policy</h1>
@@ -163,12 +162,12 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <span class="text-muted">&copy; 2011-<script>document.write(new Date().getFullYear())</script> Liquid Labs Inc.</span>
+                    <span class="text-muted">&copy; 2011-<span class="js-year">2026</span> Liquid Labs Inc.</span>
                 </div>
                 <div class="col-md-6 text-md-right">
                     <a href="../../index.html">
-                        <img src="../../img/liquid-labs-logo-trans-small.png" alt="Liquid Labs Logo" height="32"
-                            class="ml-2">
+                        <picture><source type="image/webp" srcset="../../img/liquid-labs-logo-trans-small.webp"><img loading="lazy" decoding="async" src="../../img/liquid-labs-logo-trans-small.png" alt="Liquid Labs Logo" height="32"
+                            class="ml-2"></picture>
                     </a>
                 </div>
             </div>

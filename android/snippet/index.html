@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="color-scheme" content="light dark">
   <meta name="description" content="Snippet — Code notebook for Android and official showcase for the compose-highlight Jetpack Compose library.">
   <meta name="author" content="Liquid Labs Inc.">
   <link rel="icon" href="../../img/liquid-labs-square-logo.png">
@@ -23,20 +24,18 @@
 
   <title>Snippet — Code Notebook &amp; AI - Android</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="sticky-footer-navbar.css" rel="stylesheet">
+  <!-- Shared App Subpage Stylesheet -->
+  <link href="../../css/android-app.css" rel="stylesheet">
 </head>
 
 <body>
+  <a href="#main" class="skip-link visually-hidden">Skip to main content</a>
 
   <header>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav aria-label="Primary" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="../../img/android-snippet.png" alt="Snippet Logo" height="24" width="24" class="d-inline-block align-middle mr-2 rounded">
+        <picture><source type="image/webp" srcset="../../img/android-snippet.webp"><img src="../../img/android-snippet.png" alt="Snippet Logo" height="24" width="24" class="d-inline-block align-middle mr-2 rounded"></picture>
         Snippet
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -71,9 +70,9 @@
   </header>
 
   <!-- Begin page content -->
-  <main role="main" class="container">
+  <main id="main" tabindex="-1" class="container">
     <div class="d-flex align-items-center mb-4 mt-3">
-      <img src="../../img/android-snippet.png" alt="Snippet App Icon" class="hero-icon mr-3" fetchpriority="high" width="96" height="96">
+      <picture><source type="image/webp" srcset="../../img/android-snippet.webp"><img src="../../img/android-snippet.png" alt="Snippet App Icon" class="hero-icon mr-3" fetchpriority="high" width="96" height="96"></picture>
       <div>
         <h1 class="h2 mb-1 font-weight-bold">Snippet — Code Notebook &amp; AI</h1>
         <p class="text-muted mb-0">A personal code notebook and compose-highlight showcase for Android</p>
@@ -137,7 +136,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 screenshot-card shadow-sm">
-            <img src="img/screenshots/01_snippet_notebook.png" alt="Unified Code Feed" class="screenshot-img" loading="lazy">
+            <picture><source type="image/webp" srcset="img/screenshots/01_snippet_notebook.webp"><img src="img/screenshots/01_snippet_notebook.png" alt="Unified Code Feed" class="screenshot-img" loading="lazy"></picture>
             <div class="card-body">
               <h5 class="card-title font-weight-bold">Code Notebook</h5>
               <p class="card-text text-muted small">Browse and search your saved snippets and notes with language tags and full-text search.</p>
@@ -146,7 +145,7 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 screenshot-card shadow-sm">
-            <img src="img/screenshots/03_chat_assistant.png" alt="AI Code Assistant" class="screenshot-img" loading="lazy">
+            <picture><source type="image/webp" srcset="img/screenshots/03_chat_assistant.webp"><img src="img/screenshots/03_chat_assistant.png" alt="AI Code Assistant" class="screenshot-img" loading="lazy"></picture>
             <div class="card-body">
               <h5 class="card-title font-weight-bold">AI Assistant</h5>
               <p class="card-text text-muted small">Ask syntax questions, explore concepts, and save code blocks directly to your notebook.</p>
@@ -155,7 +154,7 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 screenshot-card shadow-sm">
-            <img src="img/screenshots/05_github_gists.png" alt="GitHub Gists Integration" class="screenshot-img" loading="lazy">
+            <picture><source type="image/webp" srcset="img/screenshots/05_github_gists.webp"><img src="img/screenshots/05_github_gists.png" alt="GitHub Gists Integration" class="screenshot-img" loading="lazy"></picture>
             <div class="card-body">
               <h5 class="card-title font-weight-bold">GitHub Gists Sync</h5>
               <p class="card-text text-muted small">Browse your GitHub Gists, inspect multi-file revisions, and import or export snippets.</p>
@@ -164,7 +163,7 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 screenshot-card shadow-sm">
-            <img src="img/screenshots/06_snippet_editor.png" alt="Live Syntax Editor" class="screenshot-img" loading="lazy">
+            <picture><source type="image/webp" srcset="img/screenshots/06_snippet_editor.webp"><img src="img/screenshots/06_snippet_editor.png" alt="Live Syntax Editor" class="screenshot-img" loading="lazy"></picture>
             <div class="card-body">
               <h5 class="card-title font-weight-bold">Snippet Editor</h5>
               <p class="card-text text-muted small">Edit code with syntax highlighting, manage tags, and import code via the Android share sheet.</p>
@@ -173,7 +172,7 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 screenshot-card shadow-sm">
-            <img src="img/screenshots/07_settings.png" alt="Settings & Encryption" class="screenshot-img" loading="lazy">
+            <picture><source type="image/webp" srcset="img/screenshots/07_settings.webp"><img src="img/screenshots/07_settings.png" alt="Settings & Encryption" class="screenshot-img" loading="lazy"></picture>
             <div class="card-body">
               <h5 class="card-title font-weight-bold">Settings &amp; Appearance</h5>
               <p class="card-text text-muted small">Configure syntax themes, font size, line numbers, and optional API keys stored locally on device.</p>
@@ -182,7 +181,7 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 screenshot-card shadow-sm">
-            <img src="img/screenshots/08_adaptive_landscape.png" alt="Adaptive Landscape & Tablet Layout" class="screenshot-img" loading="lazy">
+            <picture><source type="image/webp" srcset="img/screenshots/08_adaptive_landscape.webp"><img src="img/screenshots/08_adaptive_landscape.png" alt="Adaptive Landscape & Tablet Layout" class="screenshot-img" loading="lazy"></picture>
             <div class="card-body">
               <h5 class="card-title font-weight-bold">Adaptive Layout</h5>
               <p class="card-text text-muted small">Adaptive navigation rail and layout designed for landscape orientation and larger screens.</p>
@@ -267,7 +266,7 @@
 
     <!-- Banner image -->
     <div class="text-center mt-5">
-      <img src="../../img/liquid-labs-banner-image.png" class="img-fluid border shadow-lg" alt="Banner Image" loading="lazy">
+      <picture><source type="image/webp" srcset="../../img/liquid-labs-banner-image.webp"><img src="../../img/liquid-labs-banner-image.png" class="img-fluid border shadow-lg" alt="Banner Image" loading="lazy"></picture>
     </div>
     <br />
   </main>
@@ -276,11 +275,11 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <span class="text-muted">&copy; 2011-<script>document.write(new Date().getFullYear())</script> Liquid Labs Inc.</span>
+          <span class="text-muted">&copy; 2011-<span class="js-year">2026</span> Liquid Labs Inc.</span>
         </div>
         <div class="col-md-6 text-md-right">
           <a href="../../index.html">
-            <img src="../../img/liquid-labs-logo-trans-small.png" alt="Liquid Labs Logo" height="32" class="ml-2" loading="lazy">
+            <picture><source type="image/webp" srcset="../../img/liquid-labs-logo-trans-small.webp"><img src="../../img/liquid-labs-logo-trans-small.png" alt="Liquid Labs Logo" height="32" class="ml-2" loading="lazy"></picture>
           </a>
         </div>
       </div>
