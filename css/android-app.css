@@ -325,11 +325,18 @@ main.container {
 }
 
 /* Surfaces & Components */
+main h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
 .jumbotron {
   padding: 2rem 1.75rem;
   margin-bottom: 2rem;
   background-color: var(--bg-subtle);
-  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
 }
 
 .display-5 {
@@ -347,7 +354,7 @@ main.container {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   overflow: hidden;
   border: 1px solid var(--border-color);
 }
@@ -355,13 +362,34 @@ main.container {
 .list-group-item {
   position: relative;
   display: block;
-  padding: 1rem 1.25rem;
+  padding: 1.15rem 1.35rem;
   background-color: var(--bg-surface);
   border-bottom: 1px solid var(--border-color);
 }
 
 .list-group-item:last-child {
   border-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .features .list-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    border: 0;
+    border-radius: 0;
+    overflow: visible;
+    background: transparent;
+  }
+
+  .features .list-group-item {
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+  }
+
+  .features .list-group-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
 }
 
 .card {
@@ -438,9 +466,19 @@ main.container {
   border-top: 1px solid var(--border-color);
 }
 
+img[src*="liquid-labs-banner-image"] {
+  max-width: 680px;
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
 @media (prefers-color-scheme: dark) {
   .footer img[alt*="Liquid Labs"] {
     filter: invert(1) hue-rotate(180deg) brightness(1.15);
+  }
+
+  img[src*="liquid-labs-banner-image"] {
+    filter: invert(0.92) hue-rotate(180deg);
   }
 }
 
