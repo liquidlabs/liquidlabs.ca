@@ -466,6 +466,27 @@ main h3 {
   border-top: 1px solid var(--border-color);
 }
 
+.footer .row {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.footer .col-md-6 {
+  width: auto;
+  flex: 0 1 auto;
+  max-width: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.footer .col-md-6:last-child {
+  flex-shrink: 0;
+}
+
 img[src*="liquid-labs-banner-image"] {
   max-width: 680px;
   width: 100%;
