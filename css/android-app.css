@@ -438,6 +438,12 @@ main.container {
   border-top: 1px solid var(--border-color);
 }
 
+@media (prefers-color-scheme: dark) {
+  .footer img[alt*="Liquid Labs"] {
+    filter: invert(1) hue-rotate(180deg) brightness(1.15);
+  }
+}
+
 /* Snippet & Shared App Helpers */
 .hero-icon {
   width: 96px;
