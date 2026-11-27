@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="color-scheme" content="light dark">
   <meta name="description" content="Kids Math Pup Tutor — Fun, ad-free math practice for K–2 (ages 5–8). COPPA-compliant, accessible, and works offline.">
   <meta name="author" content="Liquid Labs Inc.">
   <link rel="icon" href="../../img/liquid-labs-square-logo.png">
@@ -23,18 +24,16 @@
 
   <title>Kids Math Pup Tutor - Android</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="sticky-footer-navbar.css" rel="stylesheet">
+  <!-- Shared App Subpage Stylesheet -->
+  <link href="../../css/android-app.css" rel="stylesheet">
 </head>
 
 <body>
+  <a href="#main" class="skip-link visually-hidden">Skip to main content</a>
 
   <header>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav aria-label="Primary" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="index.html">
         <img src="../../img/math-pup-tutor-logo.webp" alt="Kids Math Pup Tutor" height="28" class="d-inline-block align-top mr-2">Kids Math Pup Tutor
       </a>
@@ -64,7 +63,7 @@
   </header>
 
   <!-- Begin page content -->
-  <main role="main" class="container">
+  <main id="main" tabindex="-1" class="container">
     <h1 class="mt-5">Kids Math Pup Tutor</h1>
     <p class="text-muted">Ages 5–8 · Ad-free · No in‑app purchases · Works offline · COPPA‑compliant</p>
 
@@ -89,39 +88,39 @@
       <h3 class="mb-4">✨ KEY FEATURES ✨</h3>
       <div class="list-group">
         <div class="list-group-item">
-          <h5 class="mb-1">📚 GRADE-APPROPRIATE LEARNING</h5>
+          <h4 class="mb-1">📚 GRADE-APPROPRIATE LEARNING</h4>
           <p class="mb-1">Problems designed specifically for K, Grade 1, and Grade 2. Adaptive difficulty adjusts to your child's performance. Practice addition, subtraction, multiplication, and division with personalized feedback and encouraging messages.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">🎮 FUN MINI-GAMES</h5>
+          <h4 class="mb-1">🎮 FUN MINI-GAMES</h4>
           <p class="mb-1">Math Race – 60-second challenge to solve problems against the clock. Memory Match – Match math problems with their answers. Unlock games by practicing – the more you learn, the more you play! Personal best tracking encourages improvement.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">🏆 ACHIEVEMENT BADGES</h5>
+          <h4 class="mb-1">🏆 ACHIEVEMENT BADGES</h4>
           <p class="mb-1">20+ unique badges to collect across 6 categories. Earn badges for streaks, accuracy, speed, and game performance. Beautiful badge designs featuring our Math Pup mascot. Celebrate every milestone in your math journey.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">📊 PROGRESS TRACKING</h5>
+          <h4 class="mb-1">📊 PROGRESS TRACKING</h4>
           <p class="mb-1">Daily streak counter builds consistent practice habits. Detailed statistics show accuracy and improvement. Session history monitors learning progress. Visual charts and performance insights help you track your child's growth.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">👨‍👩‍👧 PARENT TOOLS</h5>
+          <h4 class="mb-1">👨‍👩‍👧 PARENT TOOLS</h4>
           <p class="mb-1">Create custom math challenges tailored to your child's needs. Choose specific operations and difficulty levels. 27 pre-built templates for quick problem set creation. Generate focused practice worksheets on-demand. Track and manage your child's learning progress.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">🎵 ENGAGING SENSORY FEEDBACK</h5>
+          <h4 class="mb-1">🎵 ENGAGING SENSORY FEEDBACK</h4>
           <p class="mb-1">7 distinct sound effects for interactions and achievements. Gentle haptic feedback reinforces correct answers. Background music creates a fun learning atmosphere. Full audio controls – adjust or disable as needed.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">♿ FULLY ACCESSIBLE</h5>
+          <h4 class="mb-1">♿ FULLY ACCESSIBLE</h4>
           <p class="mb-1">Complete TalkBack support with spoken math operations. High contrast mode for improved visibility. Dynamic text sizing respects system settings. Large touch targets designed for small hands.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">📱 WORKS ON ALL DEVICES</h5>
+          <h4 class="mb-1">📱 WORKS ON ALL DEVICES</h4>
           <p class="mb-1">Optimized for phones and tablets. Adaptive layouts for any screen size. Works offline – no internet required after install.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">🔒 SAFE FOR KIDS</h5>
+          <h4 class="mb-1">🔒 SAFE FOR KIDS</h4>
           <p class="mb-1">No ads. No in-app purchases. No external links. Privacy-first design – we don't collect personal information. All data stored locally on your device.</p>
         </div>
       </div>
@@ -194,7 +193,7 @@
 
     <!-- Banner image -->
     <div class="text-center mt-5">
-      <img src="../../img/liquid-labs-banner-image.png" class="img-fluid border shadow-lg" alt="Banner Image">
+      <picture><source type="image/webp" srcset="../../img/liquid-labs-banner-image.webp"><img loading="lazy" decoding="async" src="../../img/liquid-labs-banner-image.png" class="img-fluid border shadow-lg" alt="Banner Image"></picture>
     </div>
     <br />
   </main>
@@ -203,11 +202,11 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <span class="text-muted">&copy; 2011-<script>document.write(new Date().getFullYear())</script> Liquid Labs Inc.</span>
+          <span class="text-muted">&copy; 2011-<span class="js-year">2026</span> Liquid Labs Inc.</span>
         </div>
         <div class="col-md-6 text-md-right">
           <a href="../../index.html">
-            <img src="../../img/liquid-labs-logo-trans-small.png" alt="Liquid Labs Logo" height="32" class="ml-2">
+            <picture><source type="image/webp" srcset="../../img/liquid-labs-logo-trans-small.webp"><img loading="lazy" decoding="async" src="../../img/liquid-labs-logo-trans-small.png" alt="Liquid Labs Logo" height="32" class="ml-2"></picture>
           </a>
         </div>
       </div>

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="color-scheme" content="light dark">
   <meta name="description" content="CodeMateX - On-device AI coding tutor with offline-first interactive lessons and multi-language code runner.">
   <meta name="author" content="Liquid Labs Inc.">
   <link rel="icon" href="../../img/liquid-labs-square-logo.png">
@@ -23,20 +24,18 @@
 
   <title>CodeMateX - AI Coding Tutor - Android</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="sticky-footer-navbar.css" rel="stylesheet">
+  <!-- Shared App Subpage Stylesheet -->
+  <link href="../../css/android-app.css" rel="stylesheet">
 </head>
 
 <body>
+  <a href="#main" class="skip-link visually-hidden">Skip to main content</a>
 
   <header>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav aria-label="Primary" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="index.html">
-        <img src="../../img/codematex-logo.png" alt="CodeMateX Logo" height="28" class="d-inline-block align-middle mr-2">
+        <picture><source type="image/webp" srcset="../../img/codematex-logo.webp"><img src="../../img/codematex-logo.png" alt="CodeMateX Logo" height="28" class="d-inline-block align-middle mr-2"></picture>
         CodeMateX
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -65,7 +64,7 @@
   </header>
 
   <!-- Begin page content -->
-  <main role="main" class="container">
+  <main id="main" tabindex="-1" class="container">
     <h1 class="mt-5">CodeMateX — AI Coding Tutor</h1>
 
     <div class="jumbotron my-4">
@@ -85,39 +84,39 @@
       <h3 class="mb-4">Key Features</h3>
       <div class="list-group">
         <div class="list-group-item">
-          <h5 class="mb-1">📚 Interactive Guided Courses &amp; Syllabi</h5>
+          <h4 class="mb-1">📚 Interactive Guided Courses &amp; Syllabi</h4>
           <p class="mb-1">10+ bundled offline-first courses: Kotlin Tour (Beginner &amp; Intermediate) + Foundations, Go by Example (85+ lessons) + Foundations, Rust by Example (196+ lessons) + Foundations, Python, TypeScript, and Swift (600+ total lessons). Easily explore curriculum with sticky language filter chips.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">▶️ In-App Code Execution &amp; Terminal Runner</h5>
+          <h4 class="mb-1">▶️ In-App Code Execution &amp; Terminal Runner</h4>
           <p class="mb-1">Run interactive code snippets in Kotlin, Go, Rust, Python, and TypeScript with live terminal console output. Uses secure cloud sandbox proxy execution when connected, and automatically switches to offline reading mode when disconnected so study is never interrupted.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">✅ Interactive Quick-Check Quizzes</h5>
+          <h4 class="mb-1">✅ Interactive Quick-Check Quizzes</h4>
           <p class="mb-1">Real-time conceptual multiple-choice quizzes with instant visual validation and explanations to test and reinforce your knowledge.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">🧠 100% Local On-Device AI</h5>
+          <h4 class="mb-1">🧠 100% Local On-Device AI</h4>
           <p class="mb-1">Powered by Google LiteRT-LM (supporting Gemma 2 2B, Qwen 2.5 Coder, Qwen 3, Phi-4 Mini). AI inference runs 100% on your device hardware with zero cloud LLM API calls, zero subscription fees, and complete offline capability.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">🛡️ Complete Chat Privacy &amp; Security</h5>
+          <h4 class="mb-1">🛡️ Complete Chat Privacy &amp; Security</h4>
           <p class="mb-1">Your code prompts, questions, and conversation history never leave your device. No user accounts, advertising trackers, or cloud telemetry data collection required.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">🎨 Code Block Customization &amp; AI Personas</h5>
+          <h4 class="mb-1">🎨 Code Block Customization &amp; AI Personas</h4>
           <p class="mb-1">Syntax highlighting powered by our open-source <a href="https://github.com/hossain-khan/android-compose-highlight" target="_blank" rel="noopener noreferrer"><strong>Compose Highlight</strong></a> library for Jetpack Compose. Includes Highlight.js syntax themes (<em>Tomorrow Light/Night</em>, <em>Atom One</em>, <em>GitHub</em>, <em>Dracula</em>), configurable density, and line numbers. Choose tunable AI tutor personas (<em>Senior Architect</em>, <em>Beginner Tutor</em>, <em>Interview Coach</em>) tailored to your learning pace.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">💻 Specialized Developer Tutoring Topics</h5>
+          <h4 class="mb-1">💻 Specialized Developer Tutoring Topics</h4>
           <p class="mb-1">Get targeted guidance with interactive topic tracks tailored for modern development: Kotlin idioms, Android Jetpack &amp; Modern Architecture (MVI/MVVM), Jetpack Compose &amp; Material 3, Coroutines &amp; Flow, Bug Triaging, System Design, Algorithms, Python, Swift, and Rust.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">📊 Real-Time Technical Benchmarking Dashboard</h5>
+          <h4 class="mb-1">📊 Real-Time Technical Benchmarking Dashboard</h4>
           <p class="mb-1">Inspect hardware execution metrics in real time: Hardware Backend acceleration badges (NPU, GPU OpenCL/Vulkan, and CPU), Time-to-First-Token (TTFT) prefill latency, active decode throughput (tokens/sec), and memory footprint boundaries.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">📱 Modern Material 3 Expressive Design</h5>
+          <h4 class="mb-1">📱 Modern Material 3 Expressive Design</h4>
           <p class="mb-1">Built entirely with Jetpack Compose following Material 3 Expressive guidelines. Features atmospheric ambient lighting, dynamic topic visual branding, and adaptive layouts tailored for compact phones, foldables, and tablets.</p>
         </div>
       </div>
@@ -169,7 +168,7 @@
 
     <!-- Banner image -->
     <div class="text-center mt-5">
-      <img src="../../img/liquid-labs-banner-image.png" class="img-fluid border shadow-lg" alt="Banner Image">
+      <picture><source type="image/webp" srcset="../../img/liquid-labs-banner-image.webp"><img loading="lazy" decoding="async" src="../../img/liquid-labs-banner-image.png" class="img-fluid border shadow-lg" alt="Banner Image"></picture>
     </div>
     <br />
   </main>
@@ -178,11 +177,11 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <span class="text-muted">&copy; 2011-<script>document.write(new Date().getFullYear())</script> Liquid Labs Inc.</span>
+          <span class="text-muted">&copy; 2011-<span class="js-year">2026</span> Liquid Labs Inc.</span>
         </div>
         <div class="col-md-6 text-md-right">
           <a href="../../index.html">
-            <img src="../../img/liquid-labs-logo-trans-small.png" alt="Liquid Labs Logo" height="32" class="ml-2">
+            <picture><source type="image/webp" srcset="../../img/liquid-labs-logo-trans-small.webp"><img loading="lazy" decoding="async" src="../../img/liquid-labs-logo-trans-small.png" alt="Liquid Labs Logo" height="32" class="ml-2"></picture>
           </a>
         </div>
       </div>

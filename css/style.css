@@ -1118,13 +1118,90 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------*/
 #contact {
   background: var(--bg-surface-alt);
-  padding: 80px 0 40px 0;
+  padding: 64px 0 40px 0;
 }
 
 @media (prefers-color-scheme: dark) {
   #contact iframe {
     filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%);
   }
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(48, 105, 176, 0.12);
+  color: var(--accent-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.contact-card h4 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.contact-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--contact-text);
+}
+
+.contact-card a {
+  color: var(--contact-text);
+}
+
+.contact-card a:hover {
+  color: var(--accent-primary);
+}
+
+.contact-card .social-links {
+  display: flex;
+  gap: 0.5rem;
+  padding-bottom: 0;
+}
+
+.contact-card .social-links a {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
 }
 
 #contact #google-map {
@@ -1230,21 +1307,55 @@ h1, h2, h3, h4, h5, h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #343b40;
-  padding: 30px 0;
-  color: #fff;
+  background: #23282e;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 24px 0 18px;
+  color: #e2e6ec;
   font-size: 14px;
 }
 
+.footer-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links a {
+  color: #c8cdd5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #6aa4e8;
+}
+
 #footer .copyright {
-  text-align: center;
+  text-align: left;
 }
 
 #footer .credits {
-  padding-top: 10px;
+  padding-top: 12px;
   text-align: center;
-  font-size: 13px;
-  color: #ccc;
+  font-size: 12px;
+  color: #9aa2ad;
+}
+
+#footer .credits a {
+  color: #9ec5fe;
 }
 
 /* Scroll-Driven Reveal Animations

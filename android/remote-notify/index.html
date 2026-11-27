@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="color-scheme" content="light dark">
   <meta name="description" content="Remote Notify - Android">
   <meta name="author" content="Liquid Labs Inc.">
   <link rel="icon" href="../../img/liquid-labs-square-logo.png">
@@ -23,20 +24,18 @@
 
   <title>Remote Notify - Android</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="sticky-footer-navbar.css" rel="stylesheet">
+  <!-- Shared App Subpage Stylesheet -->
+  <link href="../../css/android-app.css" rel="stylesheet">
 </head>
 
 <body>
+  <a href="#main" class="skip-link visually-hidden">Skip to main content</a>
 
   <header>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav aria-label="Primary" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="index.html">
-        <img src="../../img/android-remote-notify.png" alt="Remote Notify Logo" height="24" width="24" class="d-inline-block align-middle mr-2 rounded">
+        <picture><source type="image/webp" srcset="../../img/android-remote-notify.webp"><img src="../../img/android-remote-notify.png" alt="Remote Notify Logo" height="24" width="24" class="d-inline-block align-middle mr-2 rounded"></picture>
         Remote Notify
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -65,7 +64,7 @@
   </header>
 
   <!-- Begin page content -->
-  <main role="main" class="container">
+  <main id="main" tabindex="-1" class="container">
     <h1 class="mt-5">Remote Notify Android App</h1>
 
     <div class="jumbotron my-4">
@@ -84,32 +83,32 @@
       <h3 class="mb-4">Key Features</h3>
       <div class="list-group">
         <div class="list-group-item">
-          <h5 class="mb-1">🔋 Real-time Monitoring</h5>
+          <h4 class="mb-1">🔋 Real-time Monitoring</h4>
           <p class="mb-1">Keep tabs on your remote device's battery and storage levels on the home screen.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">📲 Custom Alerts</h5>
+          <h4 class="mb-1">📲 Custom Alerts</h4>
           <p class="mb-1">Set up personalized triggers for battery (5%-95%) and storage (down to 2GB).</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">➕ Easy Management</h5>
+          <h4 class="mb-1">➕ Easy Management</h4>
           <p class="mb-1">Add, edit, or delete alerts with a swipe — and undo if you change your mind!</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">🛡️ Multiple Notification Methods</h5>
+          <h4 class="mb-1">🛡️ Multiple Notification Methods</h4>
           <p class="mb-1">Get notified via Twilio (SMS via API), Telegram, REST webhooks, and more.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">⚙️ Flexible Settings</h5>
+          <h4 class="mb-1">⚙️ Flexible Settings</h4>
           <p class="mb-1">Choose how often checks happen — every 30 mins, 2 hours, or your own schedule!</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">📊 Detailed Stats</h5>
+          <h4 class="mb-1">📊 Detailed Stats</h4>
           <p class="mb-1">Track notification history and see how your remote device's battery and storage levels change
             over time.</p>
         </div>
         <div class="list-group-item">
-          <h5 class="mb-1">💡 Dark & Light Mode</h5>
+          <h4 class="mb-1">💡 Dark & Light Mode</h4>
           <p class="mb-1">Enjoy a beautiful, Material 3 design in both themes!</p>
         </div>
       </div>
@@ -154,7 +153,7 @@
 
     <!-- Banner image -->
     <div class="text-center mt-5">
-      <img src="../../img/liquid-labs-banner-image.png" class="img-fluid border shadow-lg" alt="Banner Image">
+      <picture><source type="image/webp" srcset="../../img/liquid-labs-banner-image.webp"><img loading="lazy" decoding="async" src="../../img/liquid-labs-banner-image.png" class="img-fluid border shadow-lg" alt="Banner Image"></picture>
     </div>
     <br />
   </main>
@@ -163,11 +162,11 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <span class="text-muted">&copy; 2011-<script>document.write(new Date().getFullYear())</script> Liquid Labs Inc.</span>
+          <span class="text-muted">&copy; 2011-<span class="js-year">2026</span> Liquid Labs Inc.</span>
         </div>
         <div class="col-md-6 text-md-right">
           <a href="../../index.html">
-            <img src="../../img/liquid-labs-logo-trans-small.png" alt="Liquid Labs Logo" height="32" class="ml-2">
+            <picture><source type="image/webp" srcset="../../img/liquid-labs-logo-trans-small.webp"><img loading="lazy" decoding="async" src="../../img/liquid-labs-logo-trans-small.png" alt="Liquid Labs Logo" height="32" class="ml-2"></picture>
           </a>
         </div>
       </div>
