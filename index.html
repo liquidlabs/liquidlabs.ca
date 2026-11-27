@@ -520,33 +520,42 @@
       <!-- Embedded location map -->
       <iframe
         src="https://www.openstreetmap.org/export/embed.html?bbox=-78.840791%2C43.931108%2C-78.820791%2C43.941108&amp;layer=mapnik&amp;marker=43.936108%2C-78.830791"
-        width="100%" height="380" frameborder="0" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Liquid Labs Inc. Location"></iframe>
+        width="100%" height="320" frameborder="0" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Liquid Labs Inc. Location"></iframe>
 
-      <div class="container reveal-on-scroll mt-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-4">
-            <div class="info">
-              <div>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <p>1292 Tall Pine Ave<br>Oshawa, ON L1K 0G3</p>
-              </div>
-              <div>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <p><a href="mailto:contact@liquidlabs.ca" style="color: inherit;">contact@liquidlabs.ca</a></p>
-              </div>
-              <div>
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <p><a href="tel:+16478494705" style="color: inherit;">+1 647-849-4705</a></p>
-              </div>
-            </div>
-            <div class="social-links">
-              <!-- Icons from https://fontawesome.com/v4/icons/ -->
-              <a href="https://x.com/LiquidLabsInc" aria-label="X (formerly Twitter)" title="X (formerly Twitter)" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href="https://github.com/liquidlabs" aria-label="GitHub" title="GitHub" class="github"><i class="fa fa-github" aria-hidden="true"></i></a>
-              <a href="https://www.linkedin.com/company/liquid-labs-inc-/about/" aria-label="LinkedIn" title="LinkedIn" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <div class="container reveal-on-scroll">
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>1292 Tall Pine Ave<br>Oshawa, ON L1K 0G3</p>
             </div>
           </div>
-
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:contact@liquidlabs.ca">contact@liquidlabs.ca</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+16478494705">+1 647-849-4705</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa fa-share-alt" aria-hidden="true"></i></div>
+            <div>
+              <h4>Connect</h4>
+              <div class="social-links">
+                <a href="https://x.com/LiquidLabsInc" aria-label="X (formerly Twitter)" title="X (formerly Twitter)" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://github.com/liquidlabs" aria-label="GitHub" title="GitHub" class="github"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/company/liquid-labs-inc-/about/" aria-label="LinkedIn" title="LinkedIn" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section><!-- #contact -->
@@ -557,25 +566,20 @@
     Footer
   ============================-->
   <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h4>Quick Links</h4>
-            <ul class="list-unstyled">
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#android-projects">Showcase</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright 2011-<script>document.write(new Date().getFullYear())</script> <strong>Liquid Labs Inc</strong>. All Rights Reserved
+      <div class="footer-bar">
+        <div class="copyright">
+          &copy; 2011-<script>document.write(new Date().getFullYear())</script> <strong>Liquid Labs Inc.</strong> All Rights Reserved.
+        </div>
+        <nav aria-label="Footer">
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#android-projects">Showcase</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="credits">
         <!--
