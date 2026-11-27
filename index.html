@@ -55,76 +55,6 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
-
-  <style>
-    .app-icon {
-      border-radius: 1rem;
-      transition: all 0.3s ease;
-    }
-
-    .app-icon:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2),
-        0 0 1rem rgba(0, 123, 255, 0.3);
-    }
-    
-    .cookie-banner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.9);
-      color: white;
-      padding: 1rem;
-      text-align: center;
-      z-index: 1000;
-      display: none;
-    }
-    
-    .cookie-banner p {
-      margin-bottom: 0.5rem;
-    }
-    
-    .cookie-btn {
-      background: #2dc997;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      margin: 0 0.5rem;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .cookie-btn-decline {
-      background: transparent;
-      color: white;
-      border: 1px solid white;
-      padding: 0.5rem 1rem;
-      margin: 0 0.5rem;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .social-links a {
-      font-size: 18px;
-      display: inline-block;
-      background: #2dc997;
-      color: #fff;
-      line-height: 1;
-      padding: 12px 0;
-      margin-right: 8px;
-      border-radius: 50%;
-      text-align: center;
-      width: 42px;
-      height: 42px;
-      transition: 0.3s;
-    }
-    
-    .social-links a:hover {
-      background: #55d8af;
-      transform: translateY(-5px);
-    }
-  </style>
   
   <!-- Structured Data for SEO -->
   <script type="application/ld+json">
@@ -670,32 +600,6 @@
 
   <!-- Main Javascript File -->
   <script defer src="js/main.js"></script>
-  
-  <script>
-    // Cookie consent functionality
-    document.addEventListener('DOMContentLoaded', function() {
-      const cookieBanner = document.getElementById('cookie-banner');
-      const acceptCookieBtn = document.getElementById('accept-cookies');
-      const declineCookieBtn = document.getElementById('decline-cookies');
-      
-      // Check if user has already responded to cookie consent
-      if (!localStorage.getItem('cookiesAccepted') && !localStorage.getItem('cookiesDeclined')) {
-        cookieBanner.style.display = 'block';
-      }
-      
-      acceptCookieBtn.addEventListener('click', function() {
-        localStorage.setItem('cookiesAccepted', 'true');
-        localStorage.removeItem('cookiesDeclined');
-        cookieBanner.style.display = 'none';
-      });
-
-      declineCookieBtn.addEventListener('click', function() {
-        localStorage.setItem('cookiesDeclined', 'true');
-        localStorage.removeItem('cookiesAccepted');
-        cookieBanner.style.display = 'none';
-      });
-    });
-  </script>
 
 </body>
 

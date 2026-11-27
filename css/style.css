@@ -1277,3 +1277,62 @@ h1, h2, h3, h4, h5, h6 {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Cookie Banner & Social Overrides
+--------------------------------*/
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+}
+
+.cookie-banner p {
+  margin-bottom: 0.5rem;
+}
+
+.cookie-btn {
+  background: #2dc997;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cookie-btn-decline {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #2dc997;
+  color: #fff;
+  line-height: 1;
+  padding: 12px 0;
+  margin-right: 8px;
+  border-radius: 50%;
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #55d8af;
+  transform: translateY(-5px);
+}
