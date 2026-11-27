@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Privacy Policy - Liquid Labs Inc.</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="color-scheme" content="light dark">
   <meta name="description" content="Privacy Policy for Liquid Labs Inc. - Learn how we collect, use and protect your information.">
   <meta name="keywords" content="privacy policy, data protection, Liquid Labs, personal information">
 
@@ -14,6 +15,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
+  <!-- Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
 
@@ -22,13 +27,32 @@
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+  <a href="#main" class="skip-link visually-hidden">Skip to main content</a>
+
+  <button type="button" id="mobile-nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-dialog">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+
+  <dialog id="mobile-nav-dialog" aria-label="Mobile navigation">
+    <div class="mobile-nav-header">
+      <button type="button" id="mobile-nav-close" aria-label="Close navigation menu">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#android-projects">Showcase</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+      <li class="menu-active"><a href="privacy-policy.html">Privacy</a></li>
+    </ul>
+  </dialog>
 
   <!--==========================
   Header
@@ -41,7 +65,7 @@
             title="Liquid Labs Inc." height="32" /></a>
       </div>
 
-      <nav id="nav-menu-container">
+      <nav id="nav-menu-container" aria-label="Primary">
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#android-projects">Showcase</a></li>
@@ -63,8 +87,8 @@
     </div>
   </section><!-- #privacy-hero -->
 
-  <main id="main">
-    <section id="privacy-policy" class="wow fadeIn">
+  <main id="main" tabindex="-1">
+    <section id="privacy-policy" class="reveal-on-scroll">
       <div class="container">
         <div class="section-header">
           <br>
@@ -213,32 +237,15 @@
     </div>
   </footer><!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#privacy-hero" class="back-to-top" aria-label="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+  <!-- Main Javascript File -->
+  <script defer src="js/main.js"></script>
 
   <!-- Add scroll effect for header -->
   <script>
-    // Apply header scrolled class on page load always
-    $(document).ready(function() {
-      $("#header").addClass("header-scrolled");
-    });
-    
-    // Keep header scrolled class on scroll
-    $(window).scroll(function() {
-      $("#header").addClass("header-scrolled");
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('header')?.classList.add('header-scrolled');
     });
   </script>
 

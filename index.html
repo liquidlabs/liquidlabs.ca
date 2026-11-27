@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Liquid Labs Inc. | Professional Mobile & Desktop App Development</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="color-scheme" content="light dark">
   <meta name="description"
     content="Liquid Labs Inc. - Professional mobile and desktop application development company specializing in Android, iOS and custom solutions since 2011.">
   <meta name="keywords"
@@ -30,6 +31,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
+
+  <!-- Resource Hints & LCP Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="img/frozen-leaf.webp" type="image/webp" fetchpriority="high">
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
@@ -39,7 +45,6 @@
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -153,6 +158,26 @@
 </head>
 
 <body>
+  <a href="#main" class="skip-link visually-hidden">Skip to main content</a>
+
+  <button type="button" id="mobile-nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-dialog">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+
+  <dialog id="mobile-nav-dialog" aria-label="Mobile navigation">
+    <div class="mobile-nav-header">
+      <button type="button" id="mobile-nav-close" aria-label="Close navigation menu">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+    <ul>
+      <li class="menu-active"><a href="#hero">Home</a></li>
+      <li><a href="#android-projects">Showcase</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="privacy-policy.html">Privacy</a></li>
+    </ul>
+  </dialog>
 
   <!--==========================
   Header
@@ -167,7 +192,7 @@
         <!--<h1><a href="#hero">Regna</a></h1>-->
       </div>
 
-      <nav id="nav-menu-container">
+      <nav id="nav-menu-container" aria-label="Primary">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#android-projects">Showcase</a></li>
@@ -190,7 +215,7 @@
     </div>
   </section><!-- #hero -->
 
-  <main id="main">
+  <main id="main" tabindex="-1">
 
     <!--==========================
       About Us Section
@@ -229,17 +254,20 @@
       Android Projects Section
     ============================-->
     <section id="android-projects">
-      <div class="container wow fadeIn">
+      <div class="container reveal-on-scroll">
         <div class="section-header">
           <h3 class="section-title">Android Projects</h3>
           <p class="section-description">Showcasing some of our Android projects.</p>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
               <div class="icon">
                 <a href="https://play.google.com/store/apps/details?id=com.hossainkhan.vision">
-                  <img src="img/android-hkvision.png" class="app-icon" alt="H.K. Vision - Wallpapers App Icon" loading="lazy">
+                  <picture>
+                    <source type="image/webp" srcset="img/android-hkvision.webp">
+                    <img src="img/android-hkvision.png" class="app-icon" alt="H.K. Vision - Wallpapers App Icon" width="480" height="480" loading="lazy" decoding="async">
+                  </picture>
                 </a>
               </div>
               <h4 class="title">
@@ -255,11 +283,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
               <div class="icon">
                 <a href="https://play.google.com/store/apps/details?id=dev.hossain.weatheralert">
-                  <img src="img/android-weather-alert.png" class="app-icon" alt="Weather Alert App Icon" loading="lazy">
+                  <picture>
+                    <source type="image/webp" srcset="img/android-weather-alert.webp">
+                    <img src="img/android-weather-alert.png" class="app-icon" alt="Weather Alert App Icon" width="480" height="480" loading="lazy" decoding="async">
+                  </picture>
                 </a>
               </div>
               <h4 class="title">
@@ -273,11 +304,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
               <div class="icon">
                 <a href="https://play.google.com/store/apps/details?id=dev.hossain.remotenotify">
-                  <img src="img/android-remote-notify.png" class="app-icon" alt="Remote Notify App Icon" loading="lazy">
+                  <picture>
+                    <source type="image/webp" srcset="img/android-remote-notify.webp">
+                    <img src="img/android-remote-notify.png" class="app-icon" alt="Remote Notify App Icon" width="480" height="480" loading="lazy" decoding="async">
+                  </picture>
                 </a>
               </div>
               <h4 class="title">
@@ -291,11 +325,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
               <div class="icon">
                 <a href="https://github.com/hossain-khan/android-keep-alive">
-                  <img src="img/android-keep-alive.png" class="app-icon" alt="Keep Alive App Icon" loading="lazy">
+                  <picture>
+                    <source type="image/webp" srcset="img/android-keep-alive.webp">
+                    <img src="img/android-keep-alive.png" class="app-icon" alt="Keep Alive App Icon" width="512" height="512" loading="lazy" decoding="async">
+                  </picture>
                 </a>
               </div>
               <h4 class="title">
@@ -309,11 +346,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.0s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
               <div class="icon">
                 <a href="https://play.google.com/store/apps/details?id=ink.trmnl.android.buddy&pcampaignid=web_share">
-                  <img src="img/android-trmnl-buddy.png" class="app-icon" alt="TRMNL Buddy App Icon" loading="lazy">
+                  <picture>
+                    <source type="image/webp" srcset="img/android-trmnl-buddy.webp">
+                    <img src="img/android-trmnl-buddy.png" class="app-icon" alt="TRMNL Buddy App Icon" width="512" height="512" loading="lazy" decoding="async">
+                  </picture>
                 </a>
               </div>
               <h4 class="title">
@@ -326,11 +366,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.2s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
               <div class="icon">
                 <a href="https://play.google.com/store/apps/details?id=ink.trmnl.android&pcampaignid=web_share">
-                  <img src="img/android-trmnl-display.png" class="app-icon" alt="TRMNL Display App Icon" loading="lazy">
+                  <picture>
+                    <source type="image/webp" srcset="img/android-trmnl-display.webp">
+                    <img src="img/android-trmnl-display.png" class="app-icon" alt="TRMNL Display App Icon" width="512" height="512" loading="lazy" decoding="async">
+                  </picture>
                 </a>
               </div>
               <h4 class="title">
@@ -343,11 +386,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.4s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
               <div class="icon">
                 <a href="https://play.google.com/store/apps/details?id=dev.hossain.devicecatalog">
-                  <img src="img/android-device-universe.png" class="app-icon" alt="Android Device Universe App Icon" loading="lazy">
+                  <picture>
+                    <source type="image/webp" srcset="img/android-device-universe.webp">
+                    <img src="img/android-device-universe.png" class="app-icon" alt="Android Device Universe App Icon" width="512" height="512" loading="lazy" decoding="async">
+                  </picture>
                 </a>
               </div>
               <h4 class="title">
@@ -360,11 +406,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.6s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
               <div class="icon">
                 <a href="https://play.google.com/store/apps/details?id=dev.hossain.mathtutor">
-                  <img src="img/android-math-pup-tutor.png" class="app-icon" alt="Math Pup Tutor App Icon" loading="lazy">
+                  <picture>
+                    <source type="image/webp" srcset="img/android-math-pup-tutor.webp">
+                    <img src="img/android-math-pup-tutor.png" class="app-icon" alt="Math Pup Tutor App Icon" width="512" height="512" loading="lazy" decoding="async">
+                  </picture>
                 </a>
               </div>
               <h4 class="title">
@@ -377,11 +426,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.8s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
               <div class="icon">
                 <a href="https://play.google.com/store/apps/details?id=dev.hossain.codematex">
-                  <img src="img/android-codematex.png" class="app-icon" alt="CodeMateX App Icon" loading="lazy">
+                  <picture>
+                    <source type="image/webp" srcset="img/android-codematex.webp">
+                    <img src="img/android-codematex.png" class="app-icon" alt="CodeMateX App Icon" width="512" height="512" loading="lazy" decoding="async">
+                  </picture>
                 </a>
               </div>
               <h4 class="title">
@@ -394,11 +446,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="2.0s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
               <div class="icon">
                 <a href="https://play.google.com/store/apps/details?id=dev.hossain.codesnippet&pcampaignid=web_share">
-                  <img src="img/android-snippet.png" class="app-icon" alt="Snippet App Icon" loading="lazy">
+                  <picture>
+                    <source type="image/webp" srcset="img/android-snippet.webp">
+                    <img src="img/android-snippet.png" class="app-icon" alt="Snippet App Icon" width="512" height="512" loading="lazy" decoding="async">
+                  </picture>
                 </a>
               </div>
               <h4 class="title">
@@ -411,11 +466,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="2.2s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
               <div class="icon">
                 <a href="https://play.google.com/store/apps/details?id=dev.hossain.workbook">
-                  <img src="img/android-workbook.png" class="app-icon" alt="Workbook App Icon" loading="lazy">
+                  <picture>
+                    <source type="image/webp" srcset="img/android-workbook.webp">
+                    <img src="img/android-workbook.png" class="app-icon" alt="Workbook App Icon" width="512" height="512" loading="lazy" decoding="async">
+                  </picture>
                 </a>
               </div>
               <h4 class="title">
@@ -435,7 +493,7 @@
       Facts Section
     ============================-->
     <section id="facts">
-      <div class="container wow fadeIn">
+      <div class="container reveal-on-scroll">
         <div class="section-header">
           <h3 class="section-title">Facts</h3>
           <p class="section-description">We have a long history of working with mid- to large-sized companies since 2011</p>
@@ -467,31 +525,31 @@
       Services Section
     ============================-->
     <section id="services">
-      <div class="container wow fadeIn">
+      <div class="container reveal-on-scroll">
         <div class="section-header">
           <h3 class="section-title">Services</h3>
           <p class="section-description">We work with a variety of product categories and services.</p>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
-              <div class="icon"><a href="#services"><i class="fa fa-desktop"></i></a></div>
+              <div class="icon"><a href="#services" aria-label="Desktop Application"><i class="fa fa-desktop" aria-hidden="true"></i></a></div>
               <h4 class="title"><a href="#services">Desktop Application</a></h4>
               <p class="description">Desktop applications can be built to cater to multiple platforms including
                 Windows, Linux, and macOS.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
-              <div class="icon"><a href="#services"><i class="fa fa-mobile"></i></a></div>
+              <div class="icon"><a href="#services" aria-label="Mobile - Android/iOS"><i class="fa fa-mobile" aria-hidden="true"></i></a></div>
               <h4 class="title"><a href="#services">Mobile - Android/iOS</a></h4>
               <p class="description">Mobile application development is one of our strongest offerings. Please contact us to discuss
                 your product.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-lg-4 col-md-6 reveal-on-scroll">
             <div class="box">
-              <div class="icon"><a href="#services"><i class="fa fa-paper-plane"></i></a></div>
+              <div class="icon"><a href="#services" aria-label="Custom Solutions"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></div>
               <h4 class="title"><a href="#services">Custom Solutions</a></h4>
               <p class="description">We can also provide customized solutions for your specific needs. Contact us to find
                 out more.</p>
@@ -505,7 +563,7 @@
     Call To Action Section
     ============================-->
     <section id="call-to-action">
-      <div class="container wow fadeIn">
+      <div class="container reveal-on-scroll">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
             <h3 class="cta-title">Free Quote</h3>
@@ -522,7 +580,7 @@
       Contact Section
     ============================-->
     <section id="contact">
-      <div class="container wow fadeInUp">
+      <div class="container reveal-on-scroll">
         <div class="section-header">
           <h3 class="section-title">Contact</h3>
           <p class="section-description">Let's chat. We would be happy to talk about your needs.</p>
@@ -534,30 +592,28 @@
         src="https://www.openstreetmap.org/export/embed.html?bbox=-78.840791%2C43.931108%2C-78.820791%2C43.941108&amp;layer=mapnik&amp;marker=43.936108%2C-78.830791"
         width="100%" height="380" frameborder="0" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Liquid Labs Inc. Location"></iframe>
 
-      <div class="container wow fadeInUp mt-5">
+      <div class="container reveal-on-scroll mt-5">
         <div class="row justify-content-center">
           <div class="col-lg-3 col-md-4">
             <div class="info">
               <div>
-                <i class="fa fa-map-marker"></i>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <p>1292 Tall Pine Ave<br>Oshawa, ON L1K 0G3</p>
               </div>
               <div>
-                <i class="fa fa-envelope"></i>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
                 <p><a href="mailto:contact@liquidlabs.ca" style="color: inherit;">contact@liquidlabs.ca</a></p>
               </div>
               <div>
-                <i class="fa fa-phone"></i>
+                <i class="fa fa-phone" aria-hidden="true"></i>
                 <p><a href="tel:+16478494705" style="color: inherit;">+1 647-849-4705</a></p>
               </div>
             </div>
             <div class="social-links">
               <!-- Icons from https://fontawesome.com/v4/icons/ -->
-              <a href="https://x.com/LiquidLabsInc" aria-label="X (formerly Twitter)" title="X (formerly Twitter)" class="twitter"><i class="fa fa-twitter"></i></a>
-              <!--              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>-->
-              <!--              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>-->
-              <a href="https://github.com/liquidlabs" aria-label="GitHub" title="GitHub" class="github"><i class="fa fa-github"></i></a>
-              <a href="https://www.linkedin.com/company/liquid-labs-inc-/about/" aria-label="LinkedIn" title="LinkedIn" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://x.com/LiquidLabsInc" aria-label="X (formerly Twitter)" title="X (formerly Twitter)" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://github.com/liquidlabs" aria-label="GitHub" title="GitHub" class="github"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/company/liquid-labs-inc-/about/" aria-label="LinkedIn" title="LinkedIn" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </div>
           </div>
 
@@ -610,21 +666,10 @@
     <a href="privacy-policy.html" class="cookie-btn">Learn More</a>
   </div>
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#hero" class="back-to-top" aria-label="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+  <!-- Main Javascript File -->
+  <script defer src="js/main.js"></script>
   
   <script>
     // Cookie consent functionality
